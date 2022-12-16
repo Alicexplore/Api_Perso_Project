@@ -14,6 +14,10 @@ body {
     margin-top: 100px;
     margin-left: 8vw;
     word-spacing: 30px;
+    /* background-color: rgb(128, 103, 0); */
+    /* display: inline-flex; */
+    color: white;
+   
 }
 
 .secondword {
@@ -23,7 +27,7 @@ body {
     margin-top: -220px;
     font-weight: lighter;
     margin-left: 2vw;
-    color: white ;
+    color: black;  
 }
 
 .thirdword {
@@ -49,4 +53,5 @@ body {
     font-style: italic;
     margin-left: 70vw;
     margin-top: -300px;
+    color: black;
 }
