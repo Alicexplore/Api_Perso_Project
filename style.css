@@ -3,6 +3,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap');
 
+body {
+    background: rgb(187, 152, 11);
+}
+
 .firstword {
     font-family: "playfair Display";
     font-style: italic;
@@ -19,6 +23,7 @@
     margin-top: -220px;
     font-weight: lighter;
     margin-left: 2vw;
+    color: white ;
 }
 
 .thirdword {
@@ -36,11 +41,12 @@
     margin-left: 32vw;
     word-spacing: 5px;
     margin-top: -180px;
+    color: white ;
 }
 
 .enterlink {
     font-size: 10em;
     font-style: italic;
     margin-left: 70vw;
-    margin-top: -200px;
+    margin-top: -300px;
 }
