@@ -32,8 +32,15 @@
 
 .littletext {
     font-family: "EB Garamond";
-    font-size: 2em;
+    font-size: 1.8em;
     margin-left: 32vw;
     word-spacing: 5px;
-    margin-top: -190px;
+    margin-top: -180px;
+}
+
+.enterlink {
+    font-size: 10em;
+    font-style: italic;
+    margin-left: 70vw;
+    margin-top: -200px;
 }
