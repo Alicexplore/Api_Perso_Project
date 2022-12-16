@@ -1,18 +1,39 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap');
 
 .firstword {
-    font-family: "Montserrat";
-    font-weight: bold;
+    font-family: "playfair Display";
+    font-style: italic;
     font-size: 10em;
     margin-top: 100px;
-    margin-left: 2vw;
+    margin-left: 8vw;
+    word-spacing: 30px;
 }
 
 .secondword {
-    font-family: "Montserrat";
-    font-style: italic;
+    font-family: "Work Sans";
     font-size: 10em;
-    line-height: 2px;
-    margin-left: 2vw;
+    line-height: px; /*lines between them*/
+    margin-top: -220px;
     font-weight: lighter;
+    margin-left: 2vw;
+}
+
+.thirdword {
+    font-family: "Playfair Display ";
+    font-size: 10em;
+    margin-left: 5vw;
+    word-spacing: 30px;
+    margin-top: -210px;
+    font-style: italic;
+}
+
+.littletext {
+    font-family: "EB Garamond";
+    font-size: 2em;
+    margin-left: 32vw;
+    word-spacing: 5px;
+    margin-top: -190px;
 }
