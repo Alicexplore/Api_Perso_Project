@@ -13,8 +13,7 @@ body {
 }
 
 .backgroundimage {
-    background-image: url(img/botha.jpg);
-    background-size: 20%;   
+    background-image: url('img/botha.jpg');  
 }
 
 .firstword {
