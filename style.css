@@ -5,12 +5,14 @@
 
 body {
     background: rgb(2, 89, 118);
+    margin: 0;
+    padding: 0;
 }
 
 .firstword {
     font-family: "playfair Display";
     font-style: italic;
-    font-size: 10em;
+    font-size: 13vw;
     margin-top: 100px;
     margin-left: 8vw;
     word-spacing: 30px;
@@ -21,18 +23,18 @@ body {
 }
 
 .secondword {
-    font-family: "Work Sans";
-    font-size: 10em;
+    font-family: "EB Garamond";
+    font-size: 13vw;
     line-height: px; /*lines between them*/
     margin-top: -220px;
-    font-weight: lighter;
+    font-weight: bold;
     margin-left: 2vw;
     color: rgb(0, 25, 33);  
 }
 
 .thirdword {
     font-family: "Playfair Display ";
-    font-size: 10em;
+    font-size: 13vw;
     margin-left: 5vw;
     word-spacing: 30px;
     margin-top: -210px;
