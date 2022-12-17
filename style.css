@@ -4,7 +4,7 @@
 @import url('https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap');
 
 body {
-    background: rgb(187, 152, 11);
+    background: rgb(2, 89, 118);
 }
 
 .firstword {
@@ -27,7 +27,7 @@ body {
     margin-top: -220px;
     font-weight: lighter;
     margin-left: 2vw;
-    color: black;  
+    color: rgb(0, 25, 33);  
 }
 
 .thirdword {
@@ -37,11 +37,12 @@ body {
     word-spacing: 30px;
     margin-top: -210px;
     font-style: italic;
+    color: rgb(0, 25, 33);  
 }
 
 .littletext {
     font-family: "EB Garamond";
-    font-size: 1.8em;
+    font-size: 1.6em;
     margin-left: 32vw;
     word-spacing: 5px;
     margin-top: -180px;
@@ -53,5 +54,5 @@ body {
     font-style: italic;
     margin-left: 70vw;
     margin-top: -300px;
-    color: black;
+    color: white;
 }
