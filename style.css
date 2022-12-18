@@ -13,59 +13,196 @@ body {
 }
 
 .backgroundimage {
-    background-image: url('img/botha.jpg');  
+    background-image: url('img/andrebenz.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: auto;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
 }
+
+.tokyonights {
+    font-family: "Montserrat";
+    margin-top: 5.7vw;
+    margin-left: 2vw;
+    /* font-weight: bold; */
+    position: absolute;
+    font-size: 13vw;
+    color: rgb(240, 28, 0);
+    text-shadow: 2px 2px 4px #000000;
+    transform: scale(0.94);
+    animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
+  }
+  @keyframes scale {
+    100% {
+      transform: scale(1);
+    }
+  }
 
 .firstword {
     font-family: "playfair Display";
     font-style: italic;
     font-size: 10vw;
-    margin-top: 10vw;
+    margin-top: 8vw;
     margin-left: 8vw;
     color: white;
     position: absolute;
-   
-}
+    text-shadow: 2px 2px 4px #000000;
+    filter: url(#threshold) blur(0.6px);
+    transform: scale(0.94);
+    animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
+  }
+  @keyframes scale {
+    100% {
+      transform: scale(1);
+    }
+  }
 
 .secondword {
     font-family: "Yeseva One";
     font-size: 9vw;
-    margin-top: 21.5vw;
+    margin-top: 19.5vw;
     font-weight: bold;
-    margin-left: 2vw;
-    color: rgb(255, 255, 255);
+    margin-left: 2.2vw; 
+    /* color: rgb(189, 44, 25); */
+    color: white;
     position: absolute;
-    /* background-color: rgb(255, 255, 255);  */
-    /* display: inline-block; */
-}
+    text-shadow: 2px 2px 4px #000000;
+    filter: url(#threshold) blur(0.6px);
+    transform: scale(0.94);
+    animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
+  }
+  @keyframes scale {
+    100% {
+      transform: scale(1);
+    }
+  }
+
 
 .thirdword {
     font-family: "Playfair Display ";
     font-size: 10vw;
     margin-left: 5vw;
     word-spacing: 30px;
-    margin-top: 30vw;
+    margin-top: 28vw;
     font-style: italic;
-    color: rgb(255, 255, 255); 
+    color: rgb(240, 28, 0);
+    font-weight: bold;
     position: absolute; 
-    font-weight: lighter;
+    text-shadow: 2px 2px 4px #000000;
+    filter: url(#threshold) blur(0.6px);
+    transform: scale(0.94);
+    animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
+  }
+  @keyframes scale {
+    100% {
+      transform: scale(1);
+    }
+  }
+
+.asterisk {
+    font-family: "Montserrat";
+    font-size: 9vw;
+    font-style: normal;
+    color: rgb(240, 28, 0);
+    font-weight: bold;
+    margin-left: 1vw;
 }
 
 .littletext {
-    font-family: "EB Garamond";
-    font-size: 2vw;
-    margin-left: 40vw;
+    /* font-family: "EB Garamond"; */
+    font-family: "Montserrat";
+    font-size: 1.9vw;
+    margin-left: 5vw;
+    word-spacing: 5px;
+    margin-top: 39vw;
+    color: rgb(240, 28, 0);
+    position: absolute;
+    text-shadow: 2px 2px 4px #000000;
+    transform: scale(0.94);
+    animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
+  }
+  @keyframes scale {
+    100% {
+      transform: scale(1);
+    }
+  }
+
+.littletext2 {
+    /* font-family: "EB Garamond"; */
+    font-family: "Montserrat";
+    font-size: 1.9vw;
+    margin-left: 5vw;
     word-spacing: 5px;
     margin-top: 41vw;
-    color: white ;
+    color: rgb(227, 50, 27);
     position: absolute;
-}
+    text-shadow: 2px 2px 4px #000000;
+    transform: scale(0.94);
+    animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
+  }
+  @keyframes scale {
+    100% {
+      transform: scale(1);
+    }
+  }
+
+
+.littletext3 {
+    /* font-family: "EB Garamond"; */
+    font-family: "Montserrat";
+    font-size: 1.9vw;
+    margin-left: 5vw;
+    word-spacing: 5px;
+    margin-top: 43vw;
+    color: rgb(227, 50, 27);
+    position: absolute;
+    text-shadow: 2px 2px 4px #000000;
+    transform: scale(0.94);
+    animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
+  }
+  @keyframes scale {
+    100% {
+      transform: scale(1);
+    }
+  }
+
+  .littletext4 {
+    /* font-family: "EB Garamond"; */
+    font-family: "Montserrat";
+    font-size: 1.2vw;
+    margin-left: 5vw;
+    word-spacing: 5px;
+    margin-top: 46vw;
+    color: rgb(227, 50, 27);
+    position: absolute;
+    text-shadow: 2px 2px 4px #000000;
+    transform: scale(0.94);
+    animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
+  }
+  @keyframes scale {
+    100% {
+      transform: scale(1);
+    }
+  }
 
 .enterlink {
     font-size: 10vw;
     font-style: italic;
-    margin-left: 70vw;
+    margin-left: 85vw;
     margin-top: 37vw;
     color: white;
     position: absolute ;
+}
+
+.credit {
+    font-family: "Montserrat";
+    font-size: 0.8vw;
+    font-style: normal;
+    color: rgb(227, 50, 27);
+    font-weight: bold;
+    margin-left: 5vw;
+    margin-top: 47.5vw;
 }
