@@ -41,15 +41,13 @@ body {
     font-family: "Playfair Display ";
     font-size: 8vw;
     margin-left: 10.5vw;
-    /* word-spacing: 30px; */
     margin-top: 9vw;
     font-style: italic;
-    /* color: rgb(240, 28, 0); */
     color: rgb(50, 62, 82);
     /* font-weight: bold; */
     position: absolute; 
     /* text-shadow: 2px 2px 4px #000000; */
-    filter: url(#threshold) blur(0.6px);
+    /* filter: url(#threshold) blur(0.6px); */
     transform: scale(0.94);
     animation: scale 4s forwards cubic-bezier(0.5, 1, 0.89, 1);
   }
@@ -66,11 +64,10 @@ body {
     font-weight: bold;
     margin-left: 2.5vw; 
     letter-spacing: 0.2vw;
-    /* color: rgb(149, 129, 112); */
     color: rgb(50, 62, 82);
     position: absolute;
     /* text-shadow: 2px 2px 4px #000000; */
-    filter: url(#threshold) blur(0.6px);
+    /* filter: url(#threshold) blur(0.6px); */
     transform: scale(0.94);
     animation: scale 4s forwards cubic-bezier(0.5, 1, 0.89, 1);
   }
@@ -85,15 +82,13 @@ body {
     font-family: "Playfair Display ";
     font-size: 8vw;
     margin-left: 5vw;
-    /* word-spacing: 30px; */
     margin-top: 22.3vw;
     font-style: italic;
-    /* color: rgb(240, 28, 0); */
     color: rgb(50, 62, 82);
     /* font-weight: bold; */
     position: absolute; 
     /* text-shadow: 2px 2px 4px #000000; */
-    filter: url(#threshold) blur(0.6px);
+    /* filter: url(#threshold) blur(0.6px); */
     transform: scale(0.94);
     animation: scale 4s forwards cubic-bezier(0.5, 1, 0.89, 1);
   }
@@ -214,17 +209,19 @@ body {
   }
 
 .enterlink {
-    font-size: 12vw;
+    font-size: 11vw;
     /* font-weight: bold; */
     margin-left: 87vw;
     margin-top: 37vw;
     color: rgb(255,255, 0255);
     position: absolute ;
+    transition: transform 300ms;
 }
 
 .enterlink:hover {
     /* color: rgb(162, 35, 0); */
     color: rgb(209, 10, 0);
+    transform: translateX(10px);
 }
 
 .credit {
