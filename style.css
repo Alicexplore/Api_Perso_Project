@@ -21,11 +21,11 @@ body {
 
 .underscore {
     font-family: "Montserrat";
-    margin-top: 5.65vw;
+    margin-top: 5.8vw;
     margin-left: 3vw;
     /* font-weight: bold; */
     position: absolute;
-    font-size: 13vw;
+    font-size: 11vw;
     color: rgb(50, 62, 82);
     /* text-shadow: 2px 2px 4px #000000; */
     transform: scale(0.94);
@@ -39,7 +39,7 @@ body {
 
 .firstword {
     font-family: "Playfair Display ";
-    font-size: 10vw;
+    font-size: 8vw;
     margin-left: 10.5vw;
     /* word-spacing: 30px; */
     margin-top: 9.7vw;
@@ -61,8 +61,8 @@ body {
 
 .secondword {
     font-family: "Yeseva One";
-    font-size: 9vw;
-    margin-top: 19.5vw;
+    font-size: 7.5vw;
+    margin-top: 17.5vw;
     font-weight: bold;
     margin-left: 2.2vw; 
     letter-spacing: 0.2vw;
@@ -83,10 +83,10 @@ body {
 
 .thirdword {
     font-family: "Playfair Display ";
-    font-size: 10vw;
+    font-size: 8vw;
     margin-left: 5vw;
     /* word-spacing: 30px; */
-    margin-top: 28vw;
+    margin-top: 22.9vw;
     font-style: italic;
     /* color: rgb(240, 28, 0); */
     color: rgb(50, 62, 82);
@@ -117,9 +117,9 @@ body {
     font-family: "Montserrat";
     font-size: 1.9vw;
     font-weight: bold;
-    margin-left: 5.8vw;
+    margin-left: 5.5vw;
     word-spacing: 5px;
-    margin-top: 39vw;
+    margin-top: 33.5vw;
     color: rgb(162, 35, 0);
     position: absolute;
     /* text-shadow: 2px 2px 4px #000000; */
@@ -137,9 +137,9 @@ body {
     font-family: "Montserrat";
     font-size: 1.9vw;
     font-weight: bold;
-    margin-left: 6.8vw;
+    margin-left: 6.4vw;
     word-spacing: 5px;
-    margin-top: 39vw;
+    margin-top: 33.5vw;
     color: rgb(50, 62, 82);
     position: absolute;
     /* text-shadow: 2px 2px 4px #000000; */
@@ -157,9 +157,9 @@ body {
     font-family: "Montserrat";
     font-size: 1.9vw;
     font-weight: bold;
-    margin-left: 6.8vw;
+    margin-left: 6.4vw;
     word-spacing: 5px;
-    margin-top: 41vw;
+    margin-top: 35.5vw;
     color: rgb(50, 62, 82);
     position: absolute;
     /* text-shadow: 2px 2px 4px #000000; */
@@ -178,9 +178,9 @@ body {
     font-family: "Montserrat";
     font-size: 1.9vw;
     font-weight: bold;
-    margin-left: 6.8vw;
+    margin-left: 6.4vw;
     word-spacing: 5px;
-    margin-top: 43vw;
+    margin-top: 37.5vw;
     color: rgb(50, 62, 82);
     position: absolute;
     /* text-shadow: 2px 2px 4px #000000; */
@@ -198,9 +198,9 @@ body {
     font-family: "Montserrat";
     font-size: 1.2vw;
     font-weight: bold;
-    margin-left: 6.8vw;
+    margin-left: 6.4vw;
     word-spacing: 5px;
-    margin-top: 46vw;
+    margin-top: 40.5vw;
     color: rgb(50, 62, 82);
     position: absolute;
     /* text-shadow: 2px 2px 4px #000000; */
@@ -217,18 +217,18 @@ body {
     font-size: 12vw;
     font-weight: bold;
     margin-left: 87vw;
-    margin-top: 39vw;
-    color: rgb(50, 62, 82);
+    margin-top: 37vw;
+    color: rgb(162, 35, 0);
     position: absolute ;
 }
 
 .credit {
     font-family: "Montserrat";
-    font-size: 0.78vw;
+    font-size: 0.77vw;
     font-weight: bold;
     font-style: normal;
     color: rgb(50, 62, 82);
     font-weight: bold;
-    margin-left: 6.8vw;
-    margin-top: 47.5vw;
+    margin-left: 6.4vw;
+    margin-top: 42vw;
 }
