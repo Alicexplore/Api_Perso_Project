@@ -86,7 +86,7 @@ body {
     font-size: 8vw;
     margin-left: 5vw;
     /* word-spacing: 30px; */
-    margin-top: 22.9vw;
+    margin-top: 24.5vw;
     font-style: italic;
     /* color: rgb(240, 28, 0); */
     color: rgb(50, 62, 82);
@@ -109,7 +109,8 @@ body {
     font-style: normal;
     color: rgb(162, 35, 0);
     font-weight: bold;
-    margin-left: 1vw;
+    margin-left: 58.5vw;
+    margin-top: 24.5vw;
 }
 
 .littleasterisk {
