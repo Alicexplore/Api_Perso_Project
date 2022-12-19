@@ -9,7 +9,7 @@ body {
 }
 
 .backgroundimage {
-    background-image: url('img/andrebenz.jpg');
+    background-image: url('img/gaborel.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     width: auto;
@@ -21,13 +21,13 @@ body {
 
 .underscore {
     font-family: "Montserrat";
-    margin-top: 5.9vw;
-    margin-left: 2vw;
+    margin-top: 5.65vw;
+    margin-left: 3vw;
     /* font-weight: bold; */
     position: absolute;
     font-size: 13vw;
-    color: rgb(240, 28, 0);
-    text-shadow: 2px 2px 4px #000000;
+    color: rgb(50, 62, 82);
+    /* text-shadow: 2px 2px 4px #000000; */
     transform: scale(0.94);
     animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
   }
@@ -38,17 +38,17 @@ body {
   }
 
 .firstword {
-    font-family: "playfair Display";
-    font-style: italic;
-    font-weight: bold;
-    letter-spacing: 0.5vw;
-    /* word-spacing: 30px; */
+    font-family: "Playfair Display ";
     font-size: 10vw;
-    margin-top: 8vw;
-    margin-left: 9vw;
-    color: rgb(240, 28, 0);
-    position: absolute;
-    text-shadow: 2px 2px 4px #000000;
+    margin-left: 10.5vw;
+    /* word-spacing: 30px; */
+    margin-top: 9.7vw;
+    font-style: italic;
+    /* color: rgb(240, 28, 0); */
+    color: rgb(50, 62, 82);
+    font-weight: bold;
+    position: absolute; 
+    /* text-shadow: 2px 2px 4px #000000; */
     filter: url(#threshold) blur(0.6px);
     transform: scale(0.94);
     animation: scale 4s forwards cubic-bezier(0.5, 1, 0.89, 1);
@@ -66,10 +66,10 @@ body {
     font-weight: bold;
     margin-left: 2.2vw; 
     letter-spacing: 0.2vw;
-    /* color: rgb(189, 44, 25); */
-    color: rgb(240, 28, 0);
+    /* color: rgb(149, 129, 112); */
+    color: rgb(50, 62, 82);
     position: absolute;
-    text-shadow: 2px 2px 4px #000000;
+    /* text-shadow: 2px 2px 4px #000000; */
     filter: url(#threshold) blur(0.6px);
     transform: scale(0.94);
     animation: scale 4s forwards cubic-bezier(0.5, 1, 0.89, 1);
@@ -89,10 +89,10 @@ body {
     margin-top: 28vw;
     font-style: italic;
     /* color: rgb(240, 28, 0); */
-    color: rgb(240, 28, 0);
+    color: rgb(50, 62, 82);
     font-weight: bold;
     position: absolute; 
-    text-shadow: 2px 2px 4px #000000;
+    /* text-shadow: 2px 2px 4px #000000; */
     filter: url(#threshold) blur(0.6px);
     transform: scale(0.94);
     animation: scale 4s forwards cubic-bezier(0.5, 1, 0.89, 1);
@@ -107,7 +107,7 @@ body {
     font-family: "Montserrat";
     font-size: 9vw;
     font-style: normal;
-    color: rgb(240, 28, 0);
+    color: rgb(50, 62, 82);
     font-weight: bold;
     margin-left: 1vw;
 }
@@ -116,10 +116,11 @@ body {
     /* font-family: "EB Garamond"; */
     font-family: "Montserrat";
     font-size: 1.9vw;
-    margin-left: 5vw;
+    font-weight: bold;
+    margin-left: 6.8vw;
     word-spacing: 5px;
     margin-top: 39vw;
-    color: rgb(240, 28, 0);
+    color: rgb(50, 62, 82);
     position: absolute;
     /* text-shadow: 2px 2px 4px #000000; */
     transform: scale(0.94);
@@ -135,10 +136,11 @@ body {
     /* font-family: "EB Garamond"; */
     font-family: "Montserrat";
     font-size: 1.9vw;
-    margin-left: 5vw;
+    font-weight: bold;
+    margin-left: 6.8vw;
     word-spacing: 5px;
     margin-top: 41vw;
-    color: rgb(240, 28, 0);
+    color: rgb(50, 62, 82);
     position: absolute;
     /* text-shadow: 2px 2px 4px #000000; */
     transform: scale(0.94);
@@ -155,10 +157,11 @@ body {
     /* font-family: "EB Garamond"; */
     font-family: "Montserrat";
     font-size: 1.9vw;
-    margin-left: 5vw;
+    font-weight: bold;
+    margin-left: 6.8vw;
     word-spacing: 5px;
     margin-top: 43vw;
-    color: rgb(240, 28, 0);
+    color: rgb(50, 62, 82);
     position: absolute;
     /* text-shadow: 2px 2px 4px #000000; */
     transform: scale(0.94);
@@ -174,10 +177,11 @@ body {
     /* font-family: "EB Garamond"; */
     font-family: "Montserrat";
     font-size: 1.2vw;
-    margin-left: 5vw;
+    font-weight: bold;
+    margin-left: 6.8vw;
     word-spacing: 5px;
     margin-top: 46vw;
-    color: rgb(240, 28, 0);
+    color: rgb(50, 62, 82);
     position: absolute;
     /* text-shadow: 2px 2px 4px #000000; */
     transform: scale(0.94);
@@ -190,20 +194,21 @@ body {
   }
 
 .enterlink {
-    font-size: 10vw;
-    font-style: italic;
-    margin-left: 85vw;
+    font-size: 12vw;
+    font-weight: bold;
+    margin-left: 87vw;
     margin-top: 39vw;
-    color: rgb(240, 28, 0);
+    color: rgb(50, 62, 82);
     position: absolute ;
 }
 
 .credit {
     font-family: "Montserrat";
     font-size: 0.78vw;
-    font-style: normal;
-    color: rgb(240, 28, 0);
     font-weight: bold;
-    margin-left: 5vw;
+    font-style: normal;
+    color: rgb(50, 62, 82);
+    font-weight: bold;
+    margin-left: 6.8vw;
     margin-top: 47.5vw;
 }
