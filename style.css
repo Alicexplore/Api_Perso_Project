@@ -54,7 +54,7 @@ body {
     text-shadow: 2px 2px 4px #000000;
     filter: url(#threshold) blur(0.6px);
     transform: scale(0.94);
-    animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
+    animation: scale 4s forwards cubic-bezier(0.5, 1, 0.89, 1);
   }
   @keyframes scale {
     100% {
@@ -74,7 +74,7 @@ body {
     text-shadow: 2px 2px 4px #000000;
     filter: url(#threshold) blur(0.6px);
     transform: scale(0.94);
-    animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
+    animation: scale 4s forwards cubic-bezier(0.5, 1, 0.89, 1);
   }
   @keyframes scale {
     100% {
@@ -97,7 +97,7 @@ body {
     text-shadow: 2px 2px 4px #000000;
     filter: url(#threshold) blur(0.6px);
     transform: scale(0.94);
-    animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
+    animation: scale 4s forwards cubic-bezier(0.5, 1, 0.89, 1);
   }
   @keyframes scale {
     100% {
@@ -123,9 +123,9 @@ body {
     margin-top: 39vw;
     color: rgb(240, 28, 0);
     position: absolute;
-    text-shadow: 2px 2px 4px #000000;
+    /* text-shadow: 2px 2px 4px #000000; */
     transform: scale(0.94);
-    animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
+    animation: scale 4s forwards cubic-bezier(0.5, 1, 0.89, 1);
   }
   @keyframes scale {
     100% {
@@ -140,11 +140,11 @@ body {
     margin-left: 5vw;
     word-spacing: 5px;
     margin-top: 41vw;
-    color: rgb(227, 50, 27);
+    color: rgb(240, 28, 0);
     position: absolute;
-    text-shadow: 2px 2px 4px #000000;
+    /* text-shadow: 2px 2px 4px #000000; */
     transform: scale(0.94);
-    animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
+    animation: scale 4s forwards cubic-bezier(0.5, 1, 0.89, 1);
   }
   @keyframes scale {
     100% {
@@ -160,11 +160,11 @@ body {
     margin-left: 5vw;
     word-spacing: 5px;
     margin-top: 43vw;
-    color: rgb(227, 50, 27);
+    color: rgb(240, 28, 0);
     position: absolute;
-    text-shadow: 2px 2px 4px #000000;
+    /* text-shadow: 2px 2px 4px #000000; */
     transform: scale(0.94);
-    animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
+    animation: scale 4s forwards cubic-bezier(0.5, 1, 0.89, 1);
   }
   @keyframes scale {
     100% {
@@ -179,11 +179,11 @@ body {
     margin-left: 5vw;
     word-spacing: 5px;
     margin-top: 46vw;
-    color: rgb(227, 50, 27);
+    color: rgb(240, 28, 0);
     position: absolute;
-    text-shadow: 2px 2px 4px #000000;
+    /* text-shadow: 2px 2px 4px #000000; */
     transform: scale(0.94);
-    animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
+    animation: scale 4s forwards cubic-bezier(0.5, 1, 0.89, 1);
   }
   @keyframes scale {
     100% {
@@ -196,7 +196,7 @@ body {
     font-style: italic;
     margin-left: 85vw;
     margin-top: 37vw;
-    color: white;
+    color: rgb(240, 28, 0);
     position: absolute ;
 }
 
@@ -204,7 +204,7 @@ body {
     font-family: "Montserrat";
     font-size: 0.8vw;
     font-style: normal;
-    color: rgb(227, 50, 27);
+    color: rgb(240, 28, 0);
     font-weight: bold;
     margin-left: 5vw;
     margin-top: 47.5vw;
