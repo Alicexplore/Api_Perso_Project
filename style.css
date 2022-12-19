@@ -44,10 +44,12 @@ body {
 .firstword {
     font-family: "playfair Display";
     font-style: italic;
+    font-weight: bold;
+    word-spacing: 30px;
     font-size: 10vw;
     margin-top: 8vw;
     margin-left: 8vw;
-    color: white;
+    color: rgb(240, 28, 0);
     position: absolute;
     text-shadow: 2px 2px 4px #000000;
     filter: url(#threshold) blur(0.6px);
@@ -67,7 +69,7 @@ body {
     font-weight: bold;
     margin-left: 2.2vw; 
     /* color: rgb(189, 44, 25); */
-    color: white;
+    color: rgb(240, 28, 0);
     position: absolute;
     text-shadow: 2px 2px 4px #000000;
     filter: url(#threshold) blur(0.6px);
