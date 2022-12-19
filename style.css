@@ -107,7 +107,7 @@ body {
     font-family: "Montserrat";
     font-size: 9vw;
     font-style: normal;
-    color: rgb(168, 36, 0);
+    color: rgb(209, 10, 0);
     font-weight: bold;
     margin-left: 1.15vw;
 }
@@ -120,7 +120,7 @@ body {
     margin-left: 5.5vw;
     word-spacing: 5px;
     margin-top: 33vw;
-    color: rgb(168, 36, 0);
+    color: rgb(209, 10, 0);
     position: absolute;
     /* text-shadow: 2px 2px 4px #000000; */
     transform: scale(0.94);
@@ -224,7 +224,7 @@ body {
 
 .enterlink:hover {
     /* color: rgb(162, 35, 0); */
-    color: rgb(168, 36, 0);
+    color: rgb(209, 10, 0);
 }
 
 .credit {
