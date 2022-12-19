@@ -215,11 +215,15 @@ body {
 
 .enterlink {
     font-size: 12vw;
-    font-weight: bold;
+    
     margin-left: 87vw;
     margin-top: 37vw;
-    color: rgb(162, 35, 0);
+    color: rgb(255,255, 0255);
     position: absolute ;
+}
+
+.enterlink:hover {
+    color: rgb(162, 35, 0);
 }
 
 .credit {
