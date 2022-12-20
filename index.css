@@ -1,0 +1,24 @@
+body {
+    margin: 0;
+    padding: 0; 
+}
+
+.image1 {
+    width: 50vw;
+    height: 100vh;
+    object-fit: cover;
+    float: left;
+    margin: 0;
+    padding: 0; 
+    display: flex;
+}
+
+.image2 {
+    width: 50vw;
+    height: 100vh;
+    object-fit: cover;
+    float: right;
+    margin: 0;
+    padding: 0; 
+    display: flex;
+}
