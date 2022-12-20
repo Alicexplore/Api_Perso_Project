@@ -1,9 +1,7 @@
 # The_Picture_Project
 
-The Picture Project is an App to find your destination by selecting photographies from the UNSPLASH Api.
-Lest's play !
+The Picture Project is a small game App to find your next travel destination by selecting some photographies,
+
+the ones you love will lead you to your next journey ✈
 
 
-
-
-IDEAS : get the picture like blur xhen press on it to select
