@@ -10,7 +10,7 @@ fetch(endpoint)
     return response.json();
    })
     .then(function (jsonData) {
-     imageElement.src = jsonData.urls.regular;
+     console.log(jsonData);
     })
     
    
