@@ -1,12 +1,11 @@
-async function callSystemTrappist1 () {
-    try {
-        const response = await fetch(``);
-        let data = await response.json();
-        let promise = data.records
-        console.log("photographies from UNSPLASH", promise)
-        return promise;
-    }
-    catch (error){
-        console.log ("Message d'erreur: ", error.message);
-    }
-}
+let clientID = "RXFOgUZNawven_5zeOt25eNeZf7BZ2KyJWk3JWyhr-Y";
+let endpoint = `https://api.unsplash.com/photos/?client_id=${clientID}`;
+
+fetch(endpoint)
+    .then(function(response) {
+    return response.json();
+   })
+    .then(function (jsonData){
+
+    })
+    

@@ -21,7 +21,7 @@ body {
 
 .underscore {
     font-family: "Montserrat";
-    margin-top: 5.2vw;
+    margin-top: 3.2vw;
     margin-left: 3vw;
     /* font-weight: bold; */
     position: absolute;
@@ -41,7 +41,7 @@ body {
     font-family: "Playfair Display ";
     font-size: 8vw;
     margin-left: 10.5vw;
-    margin-top: 9vw;
+    margin-top: 7vw;
     font-style: italic;
     color: rgb(50, 62, 82);
     /* font-weight: bold; */
@@ -60,7 +60,7 @@ body {
 .secondword {
     font-family: "Yeseva One";
     font-size: 7.5vw;
-    margin-top: 16.8vw;
+    margin-top: 14.8vw;
     font-weight: bold;
     margin-left: 2.5vw; 
     letter-spacing: 0.2vw;
@@ -82,7 +82,7 @@ body {
     font-family: "Playfair Display ";
     font-size: 8vw;
     margin-left: 5vw;
-    margin-top: 22.3vw;
+    margin-top: 20.3vw;
     font-style: italic;
     color: rgb(50, 62, 82);
     /* font-weight: bold; */
@@ -112,9 +112,9 @@ body {
     font-family: "Montserrat";
     font-size: 1.9vw;
     font-weight: bold;
-    margin-left: 5.5vw;
+    margin-left: 5.3vw;
     word-spacing: 5px;
-    margin-top: 33vw;
+    margin-top: 31vw;
     color: rgb(209, 10, 0);
     position: absolute;
     /* text-shadow: 2px 2px 4px #000000; */
@@ -134,7 +134,7 @@ body {
     font-weight: bold;
     margin-left: 6.4vw;
     word-spacing: 3px;
-    margin-top: 33vw;
+    margin-top: 31vw;
     color: rgb(50, 62, 82);
     position: absolute;
     /* text-shadow: 2px 2px 4px #000000; */
@@ -154,7 +154,7 @@ body {
     font-weight: bold;
     margin-left: 6.4vw;
     word-spacing: 3px;
-    margin-top: 35vw;
+    margin-top: 33vw;
     color: rgb(50, 62, 82);
     position: absolute;
     /* text-shadow: 2px 2px 4px #000000; */
@@ -175,7 +175,7 @@ body {
     font-weight: bold;
     margin-left: 6.4vw;
     word-spacing: 3px;
-    margin-top: 37vw;
+    margin-top: 35vw;
     color: rgb(50, 62, 82);
     position: absolute;
     /* text-shadow: 2px 2px 4px #000000; */
@@ -195,7 +195,7 @@ body {
     font-weight: bold;
     margin-left: 6.4vw;
     word-spacing: 3px;
-    margin-top: 40vw;
+    margin-top: 38vw;
     color: rgb(50, 62, 82);
     position: absolute;
     /* text-shadow: 2px 2px 4px #000000; */
@@ -219,8 +219,8 @@ body {
 }
 
 .enterlink:hover {
-    /* color: rgb(162, 35, 0); */
-    color: rgb(209, 10, 0);
+    /* color: rgb(209, 10, 0); */
+    color: rgb(255,255, 0255);
     transform: translateX(10px);
 }
 
@@ -232,5 +232,5 @@ body {
     color: rgb(50, 62, 82);
     font-weight: bold;
     margin-left: 6.4vw;
-    margin-top: 41.5vw;
+    margin-top: 39.5vw;
 }
