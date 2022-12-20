@@ -27,7 +27,6 @@ body {
     position: absolute;
     font-size: 11vw;
     color: rgb(50, 62, 82);
-    /* text-shadow: 2px 2px 4px #000000; */
     transform: scale(0.94);
     animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
   }
