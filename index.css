@@ -4,21 +4,30 @@ body {
 }
 
 .image1 {
-    width: 50vw;
+    width: auto;
     height: 100vh;
-    object-fit: cover;
-    float: left;
     margin: 0;
     padding: 0; 
     display: flex;
+    border-width: 0;
+    object-fit: cover;
 }
 
 .image2 {
-    width: 50vw;
+    width: auto;
     height: 100vh;
-    object-fit: cover;
-    float: right;
     margin: 0;
     padding: 0; 
     display: flex;
+    border-width: 0;
+    object-fit: cover;
 }
+
+#flexbox
+   {
+    display: -webkit-box;
+    -webkit-box-orient: horizontal;
+    -webkit-box-align: stretch;
+    width: auto;
+    object-fit: cover;
+   }
