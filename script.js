@@ -1,9 +1,16 @@
-let arrayNewZealand = []
-let arrayIceland = []
-let arrayHawaii = []
-let arrayNepal = []
-let arrayBolivia = []
-let arrayUtah = []
+let arrayScoretNewzealand = []
+let arrayScoreIceland = []
+let arrayScoreHawaii = []
+let arrayScoreNepal = []
+let arrayScoreBolivia = []
+let arrayScoreUtah = []
+
+let photosNewzealand = ""; ""; ""; "";
+let photosIceland = ""; ""; ""; "";
+let photosHawaii = ""; ""; ""; "";
+let photosNepal = ""; ""; ""; "";
+let photosBolivia = ""; ""; ""; "";
+let photosUtah = ""; ""; ""; "";
 
 // lancement des premières photos
 const startTheGame = () => {
