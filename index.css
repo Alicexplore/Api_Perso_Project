@@ -6,8 +6,6 @@ body {
 .image1 {
     width: auto;
     height: 100vh;
-    margin: 0;
-    padding: 0; 
     display: flex;
     border-width: 0;
     object-fit: cover;
@@ -16,12 +14,10 @@ body {
 .image2 {
     width: auto;
     height: 100vh;
-    margin: 0;
-    padding: 0; 
     display: flex;
     border-width: 0;
     object-fit: cover;
-}
+} 
 
 #flexbox
    {
@@ -31,5 +27,4 @@ body {
     width: auto;
     object-fit: cover;
    }
-
 
