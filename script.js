@@ -42,32 +42,32 @@ const loadingNewPhotos = () => {
 
 // calcul du pays gagnant --> au dernier clic
 const calculateWinnerCountry = () => {
-  for (let i = O; i <= arrayScoretNewzealand.length; i++) {
+  for (let i = O; i <= scoreNewzealand.length; i++) {
     if ([i] > 3) {
       console.log("You should go to New Zealand");
     }
   }
-  for (let i = O; i <= arrayScoreIceland.length; i++) {
+  for (let i = O; i <= scoreIceland.length; i++) {
     if (arrayScoreIceland[i] >= 3) {
       console.log("You should go to Iceland");
     }
   }
-  for (let i = O; i <= arrayScoreHawaii.length; i++) {
+  for (let i = O; i <= scoreHawaii.length; i++) {
     if (arrayScoreHawaii[i] >= 3) {
       console.log("You should go to Hawaii");
     }
   }
-  for (let i = O; i <= arrayScoreNepal.length; i++) {
+  for (let i = O; i <= scoreNepal.length; i++) {
     if (arrayScoreNepal[i] >= 3) {
       console.log("You should go to Nepal");
     }
   }
-  for (let i = O; i <= arrayScoreBolivia.length; i++) {
+  for (let i = O; i <= scoreBolivia.length; i++) {
     if (arrayScoreBolivia[i] >= 3) {
       console.log("You should go to Bolivia");
     }
   }
-  for (let i = O; i <= arrayScoreUtah.length; i++) {
+  for (let i = O; i <= scoreUtah.length; i++) {
     if (arrayScoreUtah[i] >= 3) {
       console.log("You should go to Utah");
     }
