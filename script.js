@@ -1,9 +1,9 @@
-let photosNewzealand = ["", "", "", ""];
-let photosItaly = ["", "", "", ""];
-let photosHawaii = ["", "", "", ""];
-let photosNepal = ["", "", "", ""];
-let photosBolivia = ["", "", "", ""];
-let photosUtah = ["", "", "", ""];
+let photosNewzealand = ["newzealand/newzealand1.jpg","newzealand/newzealand2.jpg","newzealand/newzealand3.jpg","newzealand/newzealand4.jpg"];
+let photosItaly = ["italy/italy1.jpg","italy/italy2jpg","italy/italy3.jpg","italy/italy4.jpg"];
+let photosHawaii = ["hawaii/hawaii1.jpg","hawaii/hawaii2.jpg","hawaii/hawaii3.jpg","hawaii/hawaii4.jpg",];
+let photosNepal = ["nepal/nepal1.jpg","nepal/nepal2.jpg","nepal/nepal3.jpg","nepal/nepal4.jpg",];
+let photosBolivia = ["bolivia/bolivia1.jpg","bolivia/bolivia2.jpg","bolivia/bolivia3.jpg","bolivia/bolivia4.jpg",];
+let photosUtah = ["utah/utah1.jpg","utah/utah2.jpg","utah/utah3.jpg","utah/utah4.jpg",];
 
 let scoreNewzealand = 0;
 let scoreItaly = 0;
