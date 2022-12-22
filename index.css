@@ -9,8 +9,6 @@ body {
     display: flex;
     border-width: 0;
     object-fit: cover;
-    /* transition: 0.7s ease-in-out; */
-
 }
 
 .image__img2 {
@@ -19,7 +17,6 @@ body {
     display: flex;
     border-width: 0;
     object-fit: cover;
-    /* transition: 0.7s ease-in-out; */
 } 
 
 .flexbox {
@@ -48,11 +45,11 @@ body {
     align-items: center;
     justify-content: center;
     opacity: 0;
-    transition: opacity 0.3s;
+    transition: opacity 0.4s;
 }
 
-.image__overlay > * {
-    transform: translateY(20px);
+.image__overlay--blur {
+    backdrop-filter: blur(5px);
 }
 
 .image__overlay:hover {
@@ -60,8 +57,13 @@ body {
 }
 
 .image__description {
-    font-size: 1.2vw;
+    font-size: 1.2vw; 
+}
 
+.image__credit {
+    opacity: 40%;
+    font-size: 0.6vw;
+    margin-top: 0.25em;
 }
 
 

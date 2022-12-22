@@ -12,6 +12,19 @@ let scoreNepal = 0;
 let scoreBolivia = 0;
 let scoreUtah = 0;
 
+let leftImage = document.querySelector("leftimageessai");
+let rightImage = document.querySelector("image");
+
+
+leftImage.addEventListener("click", e => {
+    console.log(e);
+});
+
+
+
+
+
+
 // lancement des premières photos // nécessaire ?
 const startTheGame = () => {
 
