@@ -1,12 +1,12 @@
 let photosNewzealand = ["", "", "", ""];
-let photosIceland = ["", "", "", ""];
+let photosItaly = ["", "", "", ""];
 let photosHawaii = ["", "", "", ""];
 let photosNepal = ["", "", "", ""];
 let photosBolivia = ["", "", "", ""];
 let photosUtah = ["", "", "", ""];
 
 let scoreNewzealand = 0;
-let scoreIceland = 0;
+let scoreItaly = 0;
 let scoreHawaii = 0;
 let scoreNepal = 0;
 let scoreBolivia = 0;
@@ -21,7 +21,7 @@ const startTheGame = () => {
 const countPointsOnClick = () => {
   if (photosNewzealand.addEventListener == true) {
     scoreNewzealand++;
-  } else if (photosIceland.addEventListener == true) {
+  } else if (photosItaly.addEventListener == true) {
     scoreIceland++;
   } else if (photosHawaii.addEventListener == true) {
     scoreHawaii++;
@@ -47,9 +47,9 @@ const calculateWinnerCountry = () => {
       console.log("You should go to New Zealand");
     }
   }
-  for (let i = O; i <= scoreIceland.length; i++) {
-    if (arrayScoreIceland[i] >= 3) {
-      console.log("You should go to Iceland");
+  for (let i = O; i <= scoreItaly.length; i++) {
+    if (arrayScoreItaly[i] >= 3) {
+      console.log("You should go to Italy");
     }
   }
   for (let i = O; i <= scoreHawaii.length; i++) {
