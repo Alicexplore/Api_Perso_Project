@@ -13,22 +13,20 @@ let scoreBolivia = 0;
 let scoreUtah = 0;
 
 let titleLeft = document.getElementById("titleLeft1");
-
 titleLeft.addEventListener("click", () => {
-    alert("hello test");
-    scoreNewzealand++;   
+    alert("Hello Test Left");
+    scoreNewzealand++;    
 });
 
 let titleRight = document.getElementById("titleRight1");
-
-titleLeft.addEventListener("click", () => {
-    alert("hello test");
+titleRight.addEventListener("click", () => {
+    alert("Hello Test Right");
     scoreUtah++;   
 });
 
 
 
-// imageLeft.addEventListener("mouseover", () => { // TOP TOP TOP
+// imageLeft.addEventListener("mouseover","mouseleave" () => { // TOP TOP TOP
 //     alert("hello");
 // });
 
