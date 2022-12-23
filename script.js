@@ -16,7 +16,7 @@ let leftImage = document.querySelector("leftimageessai");
 let rightImage = document.querySelector("image");
 
 
-leftImage.addEventListener("click", e => {
+leftImage.addEventListener("click", function() {
     console.log(e);
 });
 
