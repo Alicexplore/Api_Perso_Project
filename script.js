@@ -12,8 +12,8 @@ let scoreNepal = 0;
 let scoreBolivia = 0;
 let scoreUtah = 0;
 
-let leftImage = document.querySelector("leftimageessai");
-let rightImage = document.querySelector("image");
+let leftImage = document.querySelector("image");
+// let rightImage = document.querySelector("image");
 
 
 leftImage.addEventListener("click", function() {
