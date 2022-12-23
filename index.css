@@ -71,33 +71,4 @@ body {
 
 
 
-/* .image1:hover {
-    -webkit-filter: brightness(.4);
-   filter: brightness(.4);
-   transition: 0.7s ease-in-out;
-}
-
-.image2:hover {
-    -webkit-filter: brightness(.4);
-   filter: brightness(.4);
-   transition: 0.7s ease-in-out;
-} */
-
-/* .imgdescription {
-    position: absolute;
-    text-align: center;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    color: #fff;
-    visibility: hidden;
-    opacity: 0;
-  
-}
-
-.image1:hover .imgdescription {
-    visibility: visible;
-    opacity: 1;
-} */
 
