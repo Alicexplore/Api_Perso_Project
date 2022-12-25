@@ -59,7 +59,7 @@ body {
 .image__description {
     font-size: 1.2vw; 
     cursor: pointer;
-    /* cursor: url('img/heart-03.png'), auto; */
+    line-height: 50vw;
 }
 
 .image__credit {

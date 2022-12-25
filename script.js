@@ -15,7 +15,8 @@ let scoreUtah = 0;
 let titleLeft = document.getElementById("titleLeft1");
 titleLeft.addEventListener("click", () => {
     alert("Hello Test Left");
-    scoreNewzealand++;    
+    scoreNewzealand++; 
+       
 });
 
 let titleRight = document.getElementById("titleRight1");
