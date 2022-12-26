@@ -16,7 +16,6 @@ let titleLeft = document.getElementById("titleLeft1");
 titleLeft.addEventListener("click", () => {
     alert("Hello Test Left");
     scoreNewzealand++; 
-       
 });
 
 let titleRight = document.getElementById("titleRight1");
@@ -97,9 +96,9 @@ const calculateWinnerCountry = () => {
   } 
 };
 
-const winnerCountryByPoints = () => {
-    for (let i = 0; i =< )
-}
+// const winnerCountryByPoints = () => {
+//     for (let i = 0; i =< )
+// }
 
 // fin de jeu
 // const endingTheGame = () => {};

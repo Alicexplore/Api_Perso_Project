@@ -45,7 +45,7 @@ body {
     align-items: center;
     justify-content: center;
     opacity: 0;
-    transition: opacity 0.4s;
+    transition: opacity 0.6s;
 }
 
 .image__overlay--blur {
