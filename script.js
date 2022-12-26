@@ -23,26 +23,26 @@ titleRight.addEventListener("click", () => {
     alert("Hello Test Right");
     scoreUtah++;   
 });
-
+    
 // imageLeft.addEventListener("mouseover","mouseleave" () => { // TOP TOP TOP
 //     alert("hello");
 // });
 
 // évènements sur les clicks de sélection --> chargement des points dans les variables correspondantes
-const countPointsOnClick = () => {
-  if (photosNewzealand.addEventListener == true) {
-    scoreNewzealand++;
-  } else if (photosItaly.addEventListener == true) {
-    scoreIceland++;
-  } else if (photosHawaii.addEventListener == true) {
-    scoreHawaii++;
-  } else if (photosNepal.addEventListener == true) {
-    scoreNepal++;
-  } else if (photosBolivia.addEventListener == true) {
-    scoreBolivia++;
-  } else (photosUtah.addEventListener == true) 
-    scoreUtah++;  
-};
+// const countPointsOnClick = () => {
+//   if (photosNewzealand.addEventListener == true) {
+//     scoreNewzealand++;
+//   } else if (photosItaly.addEventListener == true) {
+//     scoreIceland++;
+//   } else if (photosHawaii.addEventListener == true) {
+//     scoreHawaii++;
+//   } else if (photosNepal.addEventListener == true) {
+//     scoreNepal++;
+//   } else if (photosBolivia.addEventListener == true) {
+//     scoreBolivia++;
+//   } else (photosUtah.addEventListener == true) 
+//     scoreUtah++;  
+// };
 
 
 // calcul du pays gagnant --> au dernier clic
@@ -75,8 +75,10 @@ const calculateWinnerCountry = () => {
   for (let i = O; i <= scoreUtah.length; i++) {
     if (scoreUtah[i] >= 3) {
       console.log("You should go to Utah");
+    
     } else if (scoreNewzealand === 3 && scoreBolivia === 3 && scoreHawaii === 3 &&  scoreItaly === 3 && scoreUtah === 3 && scoreNepal === 3) { 
       console.log("nothing is very clear on our side, focus and start again.");
+    
     } else (scoreNewzealand < 3 && scoreBolivia < 3 && scoreHawaii < 3 && scoreItaly < 3 && scoreUtah < 3 && scoreNepal < 3) 
       console.log("nothing is very clear on our side, focus and start again.");
   } 
