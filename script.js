@@ -97,5 +97,9 @@ const calculateWinnerCountry = () => {
   } 
 };
 
+const winnerCountryByPoints = () => {
+    for (let i = 0; i =< )
+}
+
 // fin de jeu
 // const endingTheGame = () => {};
