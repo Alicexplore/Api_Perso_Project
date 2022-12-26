@@ -24,17 +24,9 @@ titleRight.addEventListener("click", () => {
     scoreUtah++;   
 });
 
-
-
 // imageLeft.addEventListener("mouseover","mouseleave" () => { // TOP TOP TOP
 //     alert("hello");
 // });
-
-
-// lancement des premières photos // nécessaire ?
-// const startTheGame = () => {
-
-// };
 
 // évènements sur les clicks de sélection --> chargement des points dans les variables correspondantes
 const countPointsOnClick = () => {
@@ -52,12 +44,6 @@ const countPointsOnClick = () => {
     scoreUtah++;  
 };
 
-// évènements sur les clicks de sélection --> chargement de nouvelles photos
-// const loadingNewPhotos = () => {
-//   for (let i = 0; i = pays.length; i++){
-    
-//   } 
-// };
 
 // calcul du pays gagnant --> au dernier clic
 const calculateWinnerCountry = () => {
