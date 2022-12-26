@@ -65,12 +65,13 @@ body {
 }
 
 .image__description__left:before {
-    content:"will you choose";
+    content:"( choose me )";
     font-size: 1.2vw; 
     cursor: pointer;
     line-height: 50vw;
     position:absolute;
     color:#ffffff;
+    opacity: 50%;
     top:0;
     left:0;
     width:0%;
@@ -90,12 +91,13 @@ body {
 }
 
 .image__description__right:before {
-    content:"or maybe";
+    content:"( choose me )";
     font-size: 1.2vw; 
     cursor: pointer;
     line-height: 50vw;
     position:absolute;
     color:#ffffff;
+    opacity: 50%;
     top:0;
     left:0;
     width:0%;
