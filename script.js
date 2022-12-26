@@ -63,36 +63,38 @@ const countPointsOnClick = () => {
 // calcul du pays gagnant --> au dernier clic
 const calculateWinnerCountry = () => {
   for (let i = O; i <= scoreNewzealand.length; i++) {
-    if ([i] > 3) {
+    if (scoreNewzealand[i] > 3) {
       console.log("You should go to New Zealand");
     }
   }
   for (let i = O; i <= scoreItaly.length; i++) {
-    if (arrayScoreItaly[i] >= 3) {
+    if (scoreItaly[i] >= 3) {
       console.log("You should go to Italy");
     }
   }
   for (let i = O; i <= scoreHawaii.length; i++) {
-     if (arrayScoreHawaii[i] >= 3) {
+     if (scoreHawaii[i] >= 3) {
       console.log("You should go to Hawaii");
     }
   }
   for (let i = O; i <= scoreNepal.length; i++) {
-    if (arrayScoreNepal[i] >= 3) {
+    if (scoreNepal[i] >= 3) {
       console.log("You should go to Nepal");
     }
   }
   for (let i = O; i <= scoreBolivia.length; i++) {
-    if (arrayScoreBolivia[i] >= 3) {
+    if (scoreBolivia[i] >= 3) {
       console.log("You should go to Bolivia");
 }
   }
   for (let i = O; i <= scoreUtah.length; i++) {
-    if (arrayScoreUtah[i] >= 3) {
+    if (scoreUtah[i] >= 3) {
       console.log("You should go to Utah");
-    }
-  }
-  // else if aucuns n'est au dessus ou égal à trois --> console.log("nothing is very clear on our side, focus and start again.")
+    } else if (scoreNewzealand === 3 && scoreBolivia === 3 && scoreHawaii === 3 &&  scoreItaly === 3 && scoreUtah === 3 && scoreNepal === 3) { 
+      console.log("nothing is very clear on our side, focus and start again.");
+    } else (scoreNewzealand < 3 && scoreBolivia < 3 && scoreHawaii < 3 && scoreItaly < 3 && scoreUtah < 3 && scoreNepal < 3) 
+      console.log("nothing is very clear on our side, focus and start again.");
+  } 
 };
 
 // fin de jeu
