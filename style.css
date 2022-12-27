@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
 
 body {
     margin: 0;
@@ -19,11 +20,11 @@ body {
 }
 
 .underscore {
-    font-family: "Montserrat";
-    margin-top: 3.2vw;
-    margin-left: 3vw;
+    font-family: "Rubik";
+    margin-top: 6.7vw;
+    margin-left: 5vw;
     position: absolute;
-    font-size: 11vw;
+    font-size: 8vw;
     color: rgb(50, 62, 82);
     transform: scale(0.94);
     animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
@@ -35,11 +36,11 @@ body {
   }
 
 .firstword {
-    font-family: "Playfair Display ";
+    font-family: "Rubik";
     font-size: 8vw;
-    margin-left: 10.5vw;
+    margin-left: 12.5vw;
     margin-top: 7vw;
-    font-style: italic;
+    /* font-style: italic; */
     color: rgb(50, 62, 82);
     position: absolute; 
     transform: scale(0.94);
@@ -52,11 +53,12 @@ body {
   }
 
 .secondword {
-    font-family: "Yeseva One";
-    font-size: 7.5vw;
-    margin-top: 14.8vw;
-    font-weight: bold;
-    margin-left: 2.5vw; 
+    font-family: "Rubik";
+    font-size: 8vw;
+    margin-top: 14.4vw;
+    /* font-weight: bold; */
+    margin-left: 5vw; 
+    /* font-style: italic; */
     letter-spacing: 0.2vw;
     color: rgb(50, 62, 82);
     position: absolute;
@@ -73,11 +75,11 @@ body {
 
 
 .thirdword {
-    font-family: "Playfair Display ";
+    font-family: "Rubik";
     font-size: 8vw;
     margin-left: 5vw;
     margin-top: 20.3vw;
-    font-style: italic;
+    /* font-style: italic; */
     color: rgb(50, 62, 82);
     position: absolute; 
     transform: scale(0.94);
@@ -104,7 +106,7 @@ body {
     font-weight: bold;
     margin-left: 5.3vw;
     word-spacing: 5px;
-    margin-top: 31vw;
+    margin-top: 32vw;
     color: rgb(209, 10, 0);
     position: absolute;
     transform: scale(0.94);
@@ -122,7 +124,7 @@ body {
     font-weight: bold;
     margin-left: 6.4vw;
     word-spacing: 3px;
-    margin-top: 31vw;
+    margin-top: 32vw;
     color: rgb(50, 62, 82);
     position: absolute;
     transform: scale(0.94);
@@ -140,7 +142,7 @@ body {
     font-weight: bold;
     margin-left: 6.4vw;
     word-spacing: 3px;
-    margin-top: 33vw;
+    margin-top: 34vw;
     color: rgb(50, 62, 82);
     position: absolute;
     transform: scale(0.94);
@@ -159,7 +161,7 @@ body {
     font-weight: bold;
     margin-left: 6.4vw;
     word-spacing: 3px;
-    margin-top: 35vw;
+    margin-top: 36vw;
     color: rgb(50, 62, 82);
     position: absolute;
     transform: scale(0.94);
@@ -177,7 +179,7 @@ body {
     font-weight: bold;
     margin-left: 6.4vw;
     word-spacing: 3px;
-    margin-top: 38vw;
+    margin-top: 39vw;
     color: rgb(50, 62, 82);
     position: absolute;
     transform: scale(0.94);
@@ -212,5 +214,5 @@ body {
     color: rgb(50, 62, 82);
     font-weight: bold;
     margin-left: 6.4vw;
-    margin-top: 39.5vw;
+    margin-top: 40.5vw;
 }

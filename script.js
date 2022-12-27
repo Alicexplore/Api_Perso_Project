@@ -13,7 +13,7 @@ let scoreBolivia = 0;
 let scoreUtah = 0;
 
 function changeImage(image) {
-    image.src = './italy/italy4.jpg';
+    image.src = './italy/italy2.jpg';
 }
 
 let titleLeft = document.getElementById("titleLeft1");
@@ -25,7 +25,7 @@ titleLeft.addEventListener("click", () => {
 let titleRight = document.getElementById("titleRight1");
 titleRight.addEventListener("click", () => {
     alert("Hello Test Right");
-    scoreUtah++;   
+    scoreItaly++;   
 });
     
 // imageLeft.addEventListener("mouseover","mouseleave" () => { // TOP TOP TOP
