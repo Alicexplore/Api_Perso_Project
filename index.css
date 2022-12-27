@@ -59,19 +59,19 @@ body {
 
 .image__description__left {
     font-size: 1.2vw; 
-    cursor: pointer;
+    cursor: url(img/pointer-04.png), pointer;
     line-height: 50vw;
     text-align: center;
 }
 
 .image__description__left:before {
-    content:"( choose me )";
+    content: "mmm...";
     font-size: 1.2vw; 
     cursor: pointer;
     line-height: 50vw;
     position:absolute;
     color:#ffffff;
-    opacity: 50%;
+    /* opacity: 50%; */
     top:0;
     left:0;
     width:0%;
@@ -91,13 +91,13 @@ body {
 }
 
 .image__description__right:before {
-    content:"( choose me )";
+    content:"maybe";
     font-size: 1.2vw; 
     cursor: pointer;
     line-height: 50vw;
     position:absolute;
     color:#ffffff;
-    opacity: 50%;
+    /* opacity: 50%; */
     top:0;
     left:0;
     width:0%;
