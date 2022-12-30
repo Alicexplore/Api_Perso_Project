@@ -32,23 +32,6 @@ titleRight.addEventListener("click", () => {
 //     alert("hello");
 // });
 
-// évènements sur les clicks de sélection --> chargement des points dans les variables correspondantes
-// const countPointsOnClick = () => {
-//   if (photosNewzealand.addEventListener == true) {
-//     scoreNewzealand++;
-//   } else if (photosItaly.addEventListener == true) {
-//     scoreIceland++;
-//   } else if (photosHawaii.addEventListener == true) {
-//     scoreHawaii++;
-//   } else if (photosNepal.addEventListener == true) {
-//     scoreNepal++;
-//   } else if (photosBolivia.addEventListener == true) {
-//     scoreBolivia++;
-//   } else (photosUtah.addEventListener == true) 
-//     scoreUtah++;  
-// };
-
-
 // calcul du pays gagnant --> au dernier clic
 const calculateWinnerCountry = () => {
   for (let i = O; i <= scoreNewzealand.length; i++) {
