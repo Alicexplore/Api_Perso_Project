@@ -9,7 +9,21 @@
     <link rel="stylesheet" href="index.css" />
 </head>
 <body>
-    <!-- placement des photos sur la grille -->
+    <div class="popup">
+        <button id="close">&times;</button>
+        <h1>Welcome on board !</h1>
+        <p>
+            Ready to find your next destination ? <br>
+            The game is simple, you just have to choose between <br>
+            the two photographies that you could see on the screen,
+            the one on the left or the one on the right... <br>
+            and this until there is no more content to load :)
+        </p>
+        <p>
+            Let's go ! <br> Let's find out where you're going !
+        </p>
+        
+    </div>
     <div class="flexbox">
         <div class="image">
             <div class="image__overlay image__overlay--blur">
@@ -20,7 +34,7 @@
                     Alistair MacKenzie / Unsplash
                 </p>
             </div> 
-            <img class="image__img1" src="newzealand/newzealand1.jpg" alt="left picture"  onclick="changeImage(this)"> 
+            <img class="image__img1" src="newzealand/newzealand1.jpg" alt="left picture" onclick="changeImage(this)"> 
         </div>
         <div class="image">
             <img class="image__img2" src="./italy/italy4.jpg" alt="right picture">
