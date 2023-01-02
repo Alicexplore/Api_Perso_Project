@@ -104,9 +104,11 @@ body {
 
 .image__description__left {
     font-size: 1.2vw; 
+    font-weight: bold;
     cursor: url(img/pointer-04.png), pointer;
     line-height: 50vw;
     text-align: center;
+    
 }
 
 .image__description__left:before {
