@@ -61,7 +61,7 @@ body {
     height: 100vh;
     display: flex;
     border-width: 0;
-    object-fit: cover;   
+    object-fit: cover; 
 } 
 
 .flexbox {
