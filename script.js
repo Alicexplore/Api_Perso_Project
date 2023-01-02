@@ -12,6 +12,7 @@ let scoreNepal = 0;
 let scoreBolivia = 0;
 let scoreUtah = 0;
 
+// window
 window.addEventListener("load", function(){
   setTimeout(
       function open(event){
@@ -24,10 +25,12 @@ document.querySelector("#close").addEventListener("click", function(){
   document.querySelector(".popup").style.display = "none";
 });
 
+// change image little function
 function changeImage(image) {
     image.src = './italy/italy2.jpg';
 }
 
+// click add score to country variable
 let titleLeft = document.getElementById("titleLeft1");
 titleLeft.addEventListener("click", () => {
     alert("Hello Test Left");
