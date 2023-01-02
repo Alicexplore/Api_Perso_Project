@@ -21,8 +21,8 @@ body {
 .logo {
     margin-left: 2vw;
     margin-top: 2vw;
-    width: auto;
-    max-width: 20vw;
+    position: fixed;
+    width: 7vw;
 }
 
 .title {
