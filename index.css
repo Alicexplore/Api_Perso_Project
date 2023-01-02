@@ -24,7 +24,7 @@ body {
     border-radius: 8px;
     font-family: "Rubik";
     font-weight: 700;
-    display: flex;
+    display: none;
     text-align: center;
     z-index: 2;
 }
@@ -45,7 +45,6 @@ body {
     margin: 20px 0;
     margin-top: 55px;
     line-height: 25px;
-    display: flex;
 }
 
 .image__img1 {
