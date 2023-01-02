@@ -97,4 +97,6 @@ let winnerNepal = ""
 let winnerBolivia = ""
 let winnerUtah = ""
 
-const endingTheGame = () => {};
+const endingTheGame = () => {
+  
+}
