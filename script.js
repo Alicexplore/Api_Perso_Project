@@ -12,7 +12,7 @@ let scoreNepal = 0;
 let scoreBolivia = 0;
 let scoreUtah = 0;
 
-// window
+// window pop up
 window.addEventListener("load", function(){
   setTimeout(
       function open(event){
