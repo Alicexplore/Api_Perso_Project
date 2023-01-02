@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
 
 body {
@@ -104,7 +105,6 @@ body {
 
 .image__description__left {
     font-size: 1.2vw; 
-    font-weight: bold;
     cursor: url(img/pointer-04.png), pointer;
     line-height: 50vw;
     text-align: center;
@@ -115,6 +115,7 @@ body {
     content: "mmm...";
     font-size: 1.2vw; 
     cursor: pointer;
+    /* font-weight: bold; */
     line-height: 50vw;
     position:absolute;
     color:#ffffff;
