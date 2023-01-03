@@ -46,8 +46,10 @@ titleLeft.addEventListener("click", () => {
     alert("Hello Test Left");
     if (image_tracker == "f") {
       scoreBolivia++; 
-    } 
-    image.src = './nepal/nepal3.jpg';
+      image.src = './nepal/nepal3.jpg';
+    } else {
+      
+    }
 });
 
 let titleRight = document.getElementById("titleRight1");
