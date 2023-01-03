@@ -77,6 +77,10 @@ body {
     position: relative;
 }
 
+.image2 {
+    position: relative;
+}
+
 .image__overlay {
     position: absolute;
     top: 0;

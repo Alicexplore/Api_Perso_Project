@@ -48,7 +48,7 @@ let titleRight = document.getElementById("titleRight1");
 titleRight.addEventListener("click", () => {
     alert("Hello Test Right");
     scoreItaly++; 
-    image.src = './hawaii/hawaii2.jpg';  
+    image2.src = './hawaii/hawaii2.jpg';  o
 });
     
 // imageLeft.addEventListener("mouseover","mouseleave" () => { // TOP TOP TOP
