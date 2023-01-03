@@ -33,15 +33,21 @@ function changeImage(image) {
 
 // random photos left
 // const randomPhoto = (choosePhoto) => {
-//   let choosePhoto = photosNepal[Math.floor(Math.random() * photosNepal.length)]  
+//   let choosePhoto = photosNepal[Math.floor(Math.random() * photosNepal.length)] ; 
+    //  alert(choosePhoto);
 // }
 
 // click add score to country variable
+
+let image_tracker = "f"
+
 let titleLeft = document.getElementById("titleLeft1");
 titleLeft.addEventListener("click", () => {
     alert("Hello Test Left");
-    scoreBolivia++; 
-    image.src = './bolivia/bolivia4.jpg';
+    if (image_tracker == "f") {
+      scoreBolivia++; 
+    } 
+    image.src = './nepal/nepal3.jpg';
 });
 
 let titleRight = document.getElementById("titleRight1");
