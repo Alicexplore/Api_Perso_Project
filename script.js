@@ -31,17 +31,24 @@ function changeImage(image) {
     image.src = './italy/italy2.jpg';
 }
 
+// random photos left
+// const randomPhoto = (choosePhoto) => {
+//   let choosePhoto = photosNepal[Math.floor(Math.random() * photosNepal.length)]  
+// }
+
 // click add score to country variable
 let titleLeft = document.getElementById("titleLeft1");
 titleLeft.addEventListener("click", () => {
     alert("Hello Test Left");
     scoreNewzealand++; 
+    image.src = './bolivia/bolivia1.jpg';
 });
 
 let titleRight = document.getElementById("titleRight1");
 titleRight.addEventListener("click", () => {
     alert("Hello Test Right");
-    scoreItaly++;   
+    scoreItaly++; 
+    image.src = './hawaii/hawaii2.jpg';  
 });
     
 // imageLeft.addEventListener("mouseover","mouseleave" () => { // TOP TOP TOP
