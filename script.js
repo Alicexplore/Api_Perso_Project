@@ -40,8 +40,8 @@ function changeImage(image) {
 let titleLeft = document.getElementById("titleLeft1");
 titleLeft.addEventListener("click", () => {
     alert("Hello Test Left");
-    scoreNewzealand++; 
-    image.src = './bolivia/bolivia1.jpg';
+    scoreBolivia++; 
+    image.src = './bolivia/bolivia4.jpg';
 });
 
 let titleRight = document.getElementById("titleRight1");
