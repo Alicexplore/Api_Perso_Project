@@ -28,7 +28,7 @@ document.querySelector("#close").addEventListener("click", function(){
 // change image little function trying
 
 function changeImage(image) {
-    image.src = './italy/italy2.jpg', "./bolivia/bolivia2.jpg", "./nepal/nepal1.jpg";
+    image.src = './italy/italy2.jpg';
 }
 
 // click add score to country variable
