@@ -48,7 +48,7 @@ titleLeft.addEventListener("click", () => {
       scoreBolivia++; 
       image.src = './nepal/nepal3.jpg';
     } else {
-      
+
     }
 });
 
@@ -56,7 +56,7 @@ let titleRight = document.getElementById("titleRight1");
 titleRight.addEventListener("click", () => {
     alert("Hello Test Right");
     scoreItaly++; 
-    image2.src = './hawaii/hawaii2.jpg'; 
+    image.src = './hawaii/hawaii2.jpg'; 
 });
     
 // imageLeft.addEventListener("mouseover","mouseleave" () => { // TOP TOP TOP
