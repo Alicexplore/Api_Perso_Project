@@ -25,10 +25,6 @@ body {
     width: 40vw;
 }
 
-/* .littlelogo {
-    margin-left: 4vw;
-    margin-top: -60vw;  
-} */
 
 .title {
     font-family: "Poppins", sans-serif;
@@ -51,23 +47,6 @@ body {
     letter-spacing: 0.1vw;
     position: relative;
 }
-
-/* .enterbutton {
-    margin-top: 1.5vw;
-    margin-left: 4vw;
-    background-color: rgb(213, 0, 0);
-    border: none;
-    color: white;
-    padding: 20px 37px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 1.4vw;
-    font-family: "Poppins", sans-serif;
-    width: auto;
-    border-radius: 4px;
-    letter-spacing: 0.1vw;
-} */
 
 .enterbutton {
     margin-left: 4vw;

@@ -15,6 +15,9 @@ body {
     box-sizing: border-box;
 }
 .popup{
+    /* background-image: url(./img/chris-nguyen-lbmrrNgq2lo-unsplash.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat; */
     background-color: #f1f1f1;
     width: 500px;
     padding: 30px 40px;
@@ -29,6 +32,14 @@ body {
     text-align: center;
     z-index: 2;
 }
+
+.littlelogo {
+    text-align: center;
+    margin-top: -2vw; 
+    width: 40%;
+    line-height: 25px;
+}
+
 .popup button{
     display: block;
     margin:  0 0 20px auto;
@@ -44,7 +55,7 @@ body {
     font-size: 16px;
     text-align: center;
     margin: 20px 0;
-    margin-top: 55px;
+    margin-top: 55px;  
     line-height: 25px;
 }
 
