@@ -79,6 +79,11 @@ titleRight.addEventListener("click", () => {
     imageOnRight.src = './utah/utah4.jpg'; 
 });
 
+// trying recursivity
+const gameIsStartin = () => {
+    
+}
+
 // calcul du pays gagnant --> au dernier clic
 const calculateWinnerCountry = () => {
   for (let i = O; i <= scoreNewzealand.length; i++) {
