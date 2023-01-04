@@ -35,7 +35,7 @@ let utah = {
   country : "Utah"
 }
 
-let tabFinished = []
+let trashPhotos = []
 
 let scoreNewzealand = 0
 let scoreItaly = 0
