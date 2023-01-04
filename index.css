@@ -84,7 +84,11 @@ body {
     z-index: 1;
 }
 
-.images {
+.imageLeft {
+    position: relative;
+}
+
+.imageRight {
     position: relative;
 }
 
