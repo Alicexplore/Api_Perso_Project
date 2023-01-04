@@ -5,6 +5,13 @@ let photosNepal = ["nepal/nepal1.jpg","nepal/nepal2.jpg","nepal/nepal3.jpg","nep
 let photosBolivia = ["bolivia/bolivia1.jpg","bolivia/bolivia2.jpg","bolivia/bolivia3.jpg","bolivia/bolivia4.jpg",]
 let photosUtah = ["utah/utah1.jpg","utah/utah2.jpg","utah/utah3.jpg","utah/utah4.jpg",]
 
+let newzealand = {
+  photos : ["newzealand/newzealand1.jpg","newzealand/newzealand2.jpg","newzealand/newzealand3.jpg","newzealand/newzealand4.jpg"],
+  country : "New Zealand"
+}
+
+let tabFinished = []
+
 let scoreNewzealand = 0
 let scoreItaly = 0
 let scoreHawaii = 0
