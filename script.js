@@ -37,19 +37,13 @@ function changeImage(image) {
     //  alert(choosePhoto);
 // }
 
-// click add score to country variable
-
-let image_tracker = "f"
+// click add score to country variable // change the photo
 
 let titleLeft = document.getElementById("titleLeft1");
 titleLeft.addEventListener("click", () => {
     alert("Hello Test Left");
-    if (image_tracker == "f") {
       scoreBolivia++; 
       image.src = './nepal/nepal3.jpg';
-    } else {
-
-    }
 });
 
 let titleRight = document.getElementById("titleRight1");
