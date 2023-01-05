@@ -76,7 +76,7 @@ let titleRight = document.getElementById("titleRight1");
 titleRight.addEventListener("click", () => {
     alert("Hello Test Right");
     scoreItaly++; 
-    imageOnRight.src = './utah/utah4.jpg'; 
+    imageOnRight.src = './hawaii/hawaii3.jpg'; 
 });
 
 // trying recursivity
