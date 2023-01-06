@@ -18,6 +18,8 @@ let photosNepal = ["nepal/nepal1.jpg","nepal/nepal2.jpg","nepal/nepal3.jpg","nep
 let photosBolivia = ["bolivia/bolivia1.jpg","bolivia/bolivia2.jpg","bolivia/bolivia3.jpg","bolivia/bolivia4.jpg"]
 let photosUtah = ["utah/utah1.jpg","utah/utah2.jpg","utah/utah3.jpg","utah/utah4.jpg"]
 
+// organize informations (of counties/photos) to search for
+
 let newzealand = {
   photos : ["newzealand/newzealand1.jpg","newzealand/newzealand2.jpg","newzealand/newzealand3.jpg","newzealand/newzealand4.jpg"],
   country : "New Zealand"
@@ -48,7 +50,7 @@ let utah = {
   country : "Utah"
 }
 
-let trashPhotos = []
+// get scores
 
 let scoreNewzealand = 0
 let scoreItaly = 0
@@ -56,6 +58,10 @@ let scoreHawaii = 0
 let scoreNepal = 0
 let scoreBolivia = 0
 let scoreUtah = 0
+
+// delete photos after clicks
+
+let trashPhotos = []
 
 // change image little function trying
 
@@ -79,12 +85,14 @@ titleRight.addEventListener("click", () => {
     imageOnRight.src = './hawaii/hawaii3.jpg'; 
 });
 
-// trying recursivity
+// trying recursivity for changing photos / get scores / put in trash function
+
 const gameIsStartin = () => {
     
 }
 
 // calcul du pays gagnant --> au dernier clic
+
 const calculateWinnerCountry = () => {
   for (let i = O; i <= scoreNewzealand.length; i++) {
     if (scoreNewzealand[i] > 3) {
