@@ -15,9 +15,6 @@ body {
     box-sizing: border-box;
 }
 .popup{
-    /* background-image: url(./img/chris-nguyen-lbmrrNgq2lo-unsplash.jpg);
-    background-size: 100%;
-    background-repeat: no-repeat; */
     background-color: #f1f1f1;
     width: 500px;
     padding: 30px 40px;
@@ -130,11 +127,9 @@ body {
     content: "mmm...";
     font-size: 1.2vw; 
     cursor: pointer;
-    /* font-weight: bold; */
     line-height: 50vw;
     position:absolute;
     color:#ffffff;
-    /* opacity: 50%; */
     top:0;
     left:0;
     width:0%;
@@ -160,7 +155,6 @@ body {
     line-height: 50vw;
     position:absolute;
     color:#ffffff;
-    /* opacity: 50%; */
     top:0;
     left:0;
     width:0%;
