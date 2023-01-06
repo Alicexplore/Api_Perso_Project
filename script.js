@@ -76,7 +76,7 @@ titleLeft.addEventListener("click", () => {
     alert("Hello Test Left");
       scoreBolivia++; 
       imageOnLeft.src = './nepal/nepal4.jpg';
-});
+}); 
 
 let titleRight = document.getElementById("titleRight1");
 titleRight.addEventListener("click", () => {
