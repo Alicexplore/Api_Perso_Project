@@ -73,16 +73,16 @@ function changeImage(image) {
 
 let titleLeft = document.getElementById("titleLeft1");
 titleLeft.addEventListener("click", () => {
-    alert("Hello Test Left");
+    // alert("Hello Test Left");
       scoreBolivia++; 
       imageOnLeft.src = './nepal/nepal4.jpg';
 }); 
 
 let titleRight = document.getElementById("titleRight1");
 titleRight.addEventListener("click", () => {
-    alert("Hello Test Right");
+    // alert("Hello Test Right");
     scoreItaly++; 
-    imageOnRight.src = './hawaii/hawaii3.jpg'; 
+    imageOnRight.src = './utah/utah2.jpg'; 
 });
 
 // trying recursivity for changing photos / get scores / put in trash function

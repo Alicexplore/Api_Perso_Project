@@ -127,7 +127,7 @@ body {
     content: "mmm...";
     font-size: 1.2vw; 
     cursor: pointer;
-    line-height: 47vw;
+    line-height: 50vw;
     position:absolute;
     color:#ffffff;
     top:0;
@@ -152,7 +152,7 @@ body {
     content:"well... maybe";
     font-size: 1.2vw; 
     cursor: pointer;
-    line-height: 47vw;
+    line-height: 50vw;
     position:absolute;
     color:#ffffff;
     top:0;
