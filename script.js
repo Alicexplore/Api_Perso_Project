@@ -74,32 +74,37 @@ let changePicturesLeftAndRight = () => {
 
 let titleLeft = document.getElementById("titleLeft1");
 titleLeft.addEventListener("click", () => {
-    // alert("Hello Test Left");
-    const randomRight = Math.floor(Math.random() * 23) + 1;
+    
+    const randomRight = Math.floor(Math.random() * max);
     document.getElementById("imageOnRight").src = photoList[randomRight];
-    const randomLeft = Math.floor(Math.random() * 23) + 1;
+    const randomLeft = Math.floor(Math.random() * max);
     document.getElementById("imageOnLeft").src = photoList[randomLeft];
     if (photoList[randomLeft] === photoList[randomRight]) {
       alert("Hello Test Same Picture");
       document.getElementById("imageOnLeft").src = photoList[randomLeft];
       document.getElementById("imageOnRight").src = photoList[randomRight]; 
-    }
+    } 
+    // if ()
+    // photoList[i].trashPhotos.push;
 }); 
 
 let titleRight = document.getElementById("titleRight1");
 titleRight.addEventListener("click", () => {
-    // alert("Hello Test Right");
-    const randomLeft = Math.floor(Math.random() * 23) + 1;
+    
+    const randomLeft = Math.floor(Math.random() * max);
     document.getElementById("imageOnLeft").src = photoList[randomLeft];
-    const randomRight = Math.floor(Math.random() * 23) + 1;
+    const randomRight = Math.floor(Math.random() * max);
     document.getElementById("imageOnRight").src = photoList[randomRight];
     if (photoList[randomRight] === photoList[randomLeft]) {
       alert("Hello Test Same Picture");
       document.getElementById("imageOnRight").src = photoList[randomRight]; 
+      document.getElementById("imageOnLeft").src = photoList[randomLeft];
     }
     // trashPhotos.push;
 });
-};
+
+}
+
 
 changePicturesLeftAndRight();
 
