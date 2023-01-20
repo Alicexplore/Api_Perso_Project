@@ -1,4 +1,5 @@
-// window pop up
+/////////////////////////////////////////////////////// WINDOW POP UP OPENING /////////////////////////////////////////////////////////////
+
 window.addEventListener("load", function(){
   setTimeout(
       function open(event){
@@ -11,19 +12,36 @@ document.querySelector("#close").addEventListener("click", function(){
   document.querySelector(".popup").style.display = "none";
 });
 
-let photoList = ["newzealand/newzealand1.jpg","newzealand/newzealand2.jpg","newzealand/newzealand3.jpg", "newzealand/newzealand4.jpg",
-"italy/italy1.jpg","italy/italy2.jpg","italy/italy3.jpg","italy/italy4.jpg", "hawaii/hawaii1.jpg","hawaii/hawaii2.jpg","hawaii/hawaii3.jpg",
-"hawaii/hawaii4.jpg","nepal/nepal1.jpg","nepal/nepal2.jpg","nepal/nepal3.jpg","nepal/nepal4.jpg","bolivia/bolivia1.jpg","bolivia/bolivia2.jpg",
-"bolivia/bolivia3.jpg","bolivia/bolivia4.jpg","utah/utah1.jpg","utah/utah2.jpg","utah/utah3.jpg","utah/utah4.jpg"]
+/////////////////////////////////////////////////////// ARRAY OF PICTURES /////////////////////////////////////////////////////////////
 
-let photosNewzealand = ["newzealand/newzealand1.jpg","newzealand/newzealand2.jpg","newzealand/newzealand3.jpg","newzealand/newzealand4.jpg"]
-let photosItaly = ["italy/italy1.jpg","italy/italy2.jpg","italy/italy3.jpg","italy/italy4.jpg"]
-let photosHawaii = ["hawaii/hawaii1.jpg","hawaii/hawaii2.jpg","hawaii/hawaii3.jpg","hawaii/hawaii4.jpg"]
-let photosNepal = ["nepal/nepal1.jpg","nepal/nepal2.jpg","nepal/nepal3.jpg","nepal/nepal4.jpg"]
-let photosBolivia = ["bolivia/bolivia1.jpg","bolivia/bolivia2.jpg","bolivia/bolivia3.jpg","bolivia/bolivia4.jpg"]
-let photosUtah = ["utah/utah1.jpg","utah/utah2.jpg","utah/utah3.jpg","utah/utah4.jpg"]
+let photoList = [
+    "newzealand/newzealand1.jpg",
+    "newzealand/newzealand2.jpg",
+    "newzealand/newzealand3.jpg",
+    "newzealand/newzealand4.jpg",
+    "italy/italy1.jpg",
+    "italy/italy2.jpg",
+    "italy/italy3.jpg",
+    "italy/italy4.jpg",
+    "hawaii/hawaii1.jpg",
+    "hawaii/hawaii2.jpg",
+    "hawaii/hawaii3.jpg",
+    "hawaii/hawaii4.jpg",
+    "nepal/nepal1.jpg",
+    "nepal/nepal2.jpg",
+    "nepal/nepal3.jpg",
+    "nepal/nepal4.jpg",
+    "bolivia/bolivia1.jpg",
+    "bolivia/bolivia2.jpg",
+    "bolivia/bolivia3.jpg",
+    "bolivia/bolivia4.jpg",
+    "utah/utah1.jpg",
+    "utah/utah2.jpg",
+    "utah/utah3.jpg",
+    "utah/utah4.jpg"
+]
 
-// organize informations (of counties/photos) to search for
+/////////////////////////////////////////////////////// TRYING OBJECTS /////////////////////////////////////////////////////////////
 
 let newzealand = {
   photos : ["newzealand/newzealand1.jpg","newzealand/newzealand2.jpg","newzealand/newzealand3.jpg","newzealand/newzealand4.jpg"],
@@ -55,7 +73,7 @@ let utah = {
   country : "Utah"
 }
 
-// get scores
+/////////////////////////////////////////////////////// SCORE VARIABLES /////////////////////////////////////////////////////////////
 
 let scoreNewzealand = 0
 let scoreItaly = 0
@@ -64,49 +82,57 @@ let scoreNepal = 0
 let scoreBolivia = 0
 let scoreUtah = 0
 
-// delete photos after clicks
+///////////////////////////////////////////////////////////// TRASH /////////////////////////////////////////////////////////////////
 
 let trashPhotos = []
 
-// function of changing pictures from Left to Right
+/////////////////////////////////////////////////////// RANDOM PICTURES /////////////////////////////////////////////////////////////
 
-let changePicturesLeftAndRight = () => {
 
-let titleLeft = document.getElementById("titleLeft1");
-titleLeft.addEventListener("click", () => {
+
+
+
+
+
+
+
+
+
+// let changePicturesLeftAndRight = () => {
+
+// let titleLeft = document.getElementById("titleLeft1");
+// titleLeft.addEventListener("click", () => {
     
-    const randomRight = Math.floor(Math.random() * max);
-    document.getElementById("imageOnRight").src = photoList[randomRight];
-    const randomLeft = Math.floor(Math.random() * max);
-    document.getElementById("imageOnLeft").src = photoList[randomLeft];
-    if (photoList[randomLeft] === photoList[randomRight]) {
-      alert("Hello Test Same Picture");
-      document.getElementById("imageOnLeft").src = photoList[randomLeft];
-      document.getElementById("imageOnRight").src = photoList[randomRight]; 
-    } 
-    // if ()
-    // photoList[i].trashPhotos.push;
-}); 
+//     const randomRight = Math.floor(Math.random() * photoList.length);
+//     document.getElementById("imageOnRight").src = photoList[randomRight];
+//     const randomLeft = Math.floor(Math.random() * photoList.length);
+//     document.getElementById("imageOnLeft").src = photoList[randomLeft];
+//     if (photoList[randomLeft] === photoList[randomRight]) {
+//       alert("Hello Test Same Picture");
+//       document.getElementById("imageOnLeft").src = photoList[randomLeft];
+//       document.getElementById("imageOnRight").src = photoList[randomRight]; 
+//     } 
+//     // if ()
+//     // photoList[i].trashPhotos.push;
+// }); 
 
-let titleRight = document.getElementById("titleRight1");
-titleRight.addEventListener("click", () => {
+// let titleRight = document.getElementById("titleRight1");
+// titleRight.addEventListener("click", () => {
     
-    const randomLeft = Math.floor(Math.random() * max);
-    document.getElementById("imageOnLeft").src = photoList[randomLeft];
-    const randomRight = Math.floor(Math.random() * max);
-    document.getElementById("imageOnRight").src = photoList[randomRight];
-    if (photoList[randomRight] === photoList[randomLeft]) {
-      alert("Hello Test Same Picture");
-      document.getElementById("imageOnRight").src = photoList[randomRight]; 
-      document.getElementById("imageOnLeft").src = photoList[randomLeft];
-    }
-    // trashPhotos.push;
-});
+//     const randomLeft = Math.floor(Math.random() * photoList.length);
+//     document.getElementById("imageOnLeft").src = photoList[randomLeft];
+//     const randomRight = Math.floor(Math.random() * photoList.length);
+//     document.getElementById("imageOnRight").src = photoList[randomRight];
+//     if (photoList[randomRight] === photoList[randomLeft]) {
+//       alert("Hello Test Same Picture");
+//       document.getElementById("imageOnRight").src = photoList[randomRight]; 
+//       document.getElementById("imageOnLeft").src = photoList[randomLeft];
+//     }
+//     // trashPhotos.push;
+// });
 
-}
-
-
-changePicturesLeftAndRight();
+// }
+// changePicturesLeftAndRight();
 
 // not have the same choice of pictures between right and left
 
