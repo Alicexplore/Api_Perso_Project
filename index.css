@@ -117,7 +117,7 @@ body {
 
 .image__description__left {
     font-size: 1.2vw; 
-    cursor: url(img/pointer-04.png), pointer;
+    cursor: pointer;
     line-height: 50vw;
     text-align: center;
     

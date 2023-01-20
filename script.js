@@ -11,6 +11,11 @@ document.querySelector("#close").addEventListener("click", function(){
   document.querySelector(".popup").style.display = "none";
 });
 
+let photoList = ["newzealand/newzealand1.jpg","newzealand/newzealand2.jpg","newzealand/newzealand3.jpg", "newzealand/newzealand4.jpg",
+"italy/italy1.jpg","italy/italy2.jpg","italy/italy3.jpg","italy/italy4.jpg", "hawaii/hawaii1.jpg","hawaii/hawaii2.jpg","hawaii/hawaii3.jpg",
+"hawaii/hawaii4.jpg","nepal/nepal1.jpg","nepal/nepal2.jpg","nepal/nepal3.jpg","nepal/nepal4.jpg","bolivia/bolivia1.jpg","bolivia/bolivia2.jpg",
+"bolivia/bolivia3.jpg","bolivia/bolivia4.jpg","utah/utah1.jpg","utah/utah2.jpg","utah/utah3.jpg","utah/utah4.jpg"]
+
 let photosNewzealand = ["newzealand/newzealand1.jpg","newzealand/newzealand2.jpg","newzealand/newzealand3.jpg","newzealand/newzealand4.jpg"]
 let photosItaly = ["italy/italy1.jpg","italy/italy2.jpg","italy/italy3.jpg","italy/italy4.jpg"]
 let photosHawaii = ["hawaii/hawaii1.jpg","hawaii/hawaii2.jpg","hawaii/hawaii3.jpg","hawaii/hawaii4.jpg"]
@@ -63,27 +68,32 @@ let scoreUtah = 0
 
 let trashPhotos = []
 
-// change image little function trying
+// function of changing pictures from Left to Right
 
-function changeImage(image) {
-    image.src = './italy/italy2.jpg';
-}
-
-// click add score to country variable // change the photo
+let changePicturesLeftAndRight = () => {
 
 let titleLeft = document.getElementById("titleLeft1");
 titleLeft.addEventListener("click", () => {
-    // alert("Hello Test Left");
-      scoreBolivia++; 
-      imageOnLeft.src = './nepal/nepal4.jpg';
+    alert("Hello Test Left");
+    const random = Math.floor(Math.random() * 23) + 1;
+    document.getElementById("imageOnRight").src = photoList[random];
+    if ( )  
 }); 
 
 let titleRight = document.getElementById("titleRight1");
 titleRight.addEventListener("click", () => {
-    // alert("Hello Test Right");
-    scoreItaly++; 
-    imageOnRight.src = './utah/utah2.jpg'; 
+    alert("Hello Test Right");
+    const random = Math.floor(Math.random() * 23) + 1;
+    document.getElementById("imageOnRight").src = photoList[random];
+    // trashPhotos.push;
 });
+
+
+};
+
+changePicturesLeftAndRight();
+
+// not have the same choice of pictures between right and left
 
 // trying recursivity for changing photos / get scores / put in trash function
 
@@ -159,3 +169,23 @@ const endingTheGame = () => {
 // imageLeft.addEventListener("mouseover","mouseleave" () => { // TOP TOP TOP
 //     alert("hello");
 // });
+
+
+
+// let titleRight = document.getElementById("titleRight1");
+// titleRight.addEventListener("click", () => {
+//     alert("Hello Test Right");
+//     // for (let i = 0; i < )
+//     // scoreItaly++; 
+//     const random = Math.floor(Math.random() * 23) + 1;
+//     document.getElementById("imageOnRight").src = photoList[random];
+//     // imageOnRight.src = './utah/utah2.jpg'; 
+//     // trashPhotos.push;
+// });
+
+
+// change image little function trying
+
+// function changeImage(image) {
+//   image.src = './italy/italy2.jpg';
+// }
