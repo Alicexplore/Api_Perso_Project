@@ -80,10 +80,12 @@ titleLeft.addEventListener("click", () => {
     const randomLeft = Math.floor(Math.random() * 23) + 1;
     document.getElementById("imageOnLeft").src = photoList[randomLeft];
     if (photoList[randomLeft] === photoList[randomRight]) {
-      document.getElementById("imageOnLeft").src = photoList[randomLeft];
       alert("Hello Test Same Picture");
+      document.getElementById("imageOnLeft").src = photoList[randomLeft];
+      document.getElementById("imageOnRight").src = photoList[randomRight]; 
     }
 }); 
+
 let titleRight = document.getElementById("titleRight1");
 titleRight.addEventListener("click", () => {
     // alert("Hello Test Right");
@@ -92,8 +94,8 @@ titleRight.addEventListener("click", () => {
     const randomRight = Math.floor(Math.random() * 23) + 1;
     document.getElementById("imageOnRight").src = photoList[randomRight];
     if (photoList[randomRight] === photoList[randomLeft]) {
-      document.getElementById("imageOnRight").src = photoList[randomRight];
       alert("Hello Test Same Picture");
+      document.getElementById("imageOnRight").src = photoList[randomRight]; 
     }
     // trashPhotos.push;
 });
