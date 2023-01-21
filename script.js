@@ -78,7 +78,9 @@ const changePicturesLeftAndRight = () => {
 
   let previousLeft, previousRight;
 
-  let titleLeft = document.getElementById("titleLeft1");
+  // LEFT PICTURES
+
+  let titleLeft = document.getElementById("titleLeft1");  
   titleLeft.addEventListener("click", () => {
       let randomRight = Math.floor(Math.random() * photoList.length);
       let randomLeft = Math.floor(Math.random() * photoList.length); 
@@ -101,17 +103,15 @@ const changePicturesLeftAndRight = () => {
 
       previousLeft = randomLeft;
       previousRight = randomRight;
+
   });
 
-  let titleRight = document.getElementById("titleRight1");
+  // RIGHT PICTURES
+
+  let titleRight = document.getElementById("titleRight1");  
   titleRight.addEventListener("click", () => {
       let randomLeft = Math.floor(Math.random() * photoList.length);
       let randomRight = Math.floor(Math.random() * photoList.length);
-
-      // let index = photoList.indexOf(imageOnRight);
-      // if (index > -1) {
-      // photoList.splice(index, 1);
-      // }
 
       if (photoList[randomRight] === photoList[randomLeft]) {  // NEVER THE SAME ON LEFT AND RIGHT AS SAME TIME
         alert("Hello Test Same Picture");
