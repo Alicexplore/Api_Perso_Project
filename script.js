@@ -88,32 +88,59 @@ let trashPhotos = []
 
 /////////////////////////////////////////////////////// RANDOM PICTURES /////////////////////////////////////////////////////////////
 
+
 const changePicturesLeftAndRight = () => {
+
+  let previousLeft, previousRight;
 
   let titleLeft = document.getElementById("titleLeft1");
   titleLeft.addEventListener("click", () => {
       let randomRight = Math.floor(Math.random() * photoList.length);
       let randomLeft = Math.floor(Math.random() * photoList.length);
-      if (photoList[randomRight] === photoList[randomLeft]) {
-          alert("Hello Test Same Picture");
+
+      if (photoList[randomRight] === photoList[randomLeft]) {                  // NEVER THE SAME ON LEFT AND RIGHT AS SAME TIME
+        alert("Hello Test Same Picture");
+        randomRight = Math.floor(Math.random() * photoList.length);
+        randomLeft = Math.floor(Math.random() * photoList.length);
+      }
+
+      while (randomRight === previousRight || randomRight === previousLeft) {  // NEVER THE SAME TWICE ON EACH SIDES
           randomRight = Math.floor(Math.random() * photoList.length);
+      }
+      while (randomLeft === previousLeft || randomLeft === previousRight) {
           randomLeft = Math.floor(Math.random() * photoList.length);
       }
+
       document.getElementById("imageOnRight").src = photoList[randomRight];
       document.getElementById("imageOnLeft").src = photoList[randomLeft];
+      
+      previousLeft = randomLeft;
+      previousRight = randomRight;
   });
 
   let titleRight = document.getElementById("titleRight1");
   titleRight.addEventListener("click", () => {
       let randomLeft = Math.floor(Math.random() * photoList.length);
       let randomRight = Math.floor(Math.random() * photoList.length);
-      if (photoList[randomRight] === photoList[randomLeft]) {
-          alert("Hello Test Same Picture");
+
+      if (photoList[randomRight] === photoList[randomLeft]) {                  // NEVER THE SAME ON LEFT AND RIGHT AS SAME TIME
+        alert("Hello Test Same Picture");
+        randomRight = Math.floor(Math.random() * photoList.length);
+        randomLeft = Math.floor(Math.random() * photoList.length);
+      }
+
+      while (randomRight === previousRight || randomRight === previousLeft) {  // NEVER THE SAME TWICE ON EACH SIDES
           randomRight = Math.floor(Math.random() * photoList.length);
+      }
+      while (randomLeft === previousLeft || randomLeft === previousRight) {
           randomLeft = Math.floor(Math.random() * photoList.length);
       }
+
       document.getElementById("imageOnLeft").src = photoList[randomLeft];
       document.getElementById("imageOnRight").src = photoList[randomRight];
+
+      previousLeft = randomLeft;
+      previousRight = randomRight;
   });
 }
 changePicturesLeftAndRight();
