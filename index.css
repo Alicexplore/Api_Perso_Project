@@ -42,7 +42,7 @@ body {
     margin:  0 0 20px auto;
     background-color: transparent;
     font-size: 30px;
-    color: #b20000;
+    color: #00c6e0;
     border: none;
     outline: none;
     cursor: pointer;
@@ -54,6 +54,7 @@ body {
     margin: 20px 0;
     margin-top: 55px;  
     line-height: 25px;
+    justify-content: center;
 }
 
 .image__img1 {
