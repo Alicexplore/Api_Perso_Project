@@ -90,19 +90,36 @@ let trashPhotos = []
 
 const changePicturesLeftAndRight = () => {
 
+  let titleLeft = document.getElementById("titleLeft1");
+  titleLeft.addEventListener("click", () => {
+      let randomRight = Math.floor(Math.random() * photoList.length);
+      let randomLeft = Math.floor(Math.random() * photoList.length);
+      if (photoList[randomRight] === photoList[randomLeft]) {
+          alert("Hello Test Same Picture");
+          randomRight = Math.floor(Math.random() * photoList.length);
+          randomLeft = Math.floor(Math.random() * photoList.length);
+      }
+      document.getElementById("imageOnRight").src = photoList[randomRight];
+      document.getElementById("imageOnLeft").src = photoList[randomLeft];
+  });
+
+  let titleRight = document.getElementById("titleRight1");
+  titleRight.addEventListener("click", () => {
+      let randomLeft = Math.floor(Math.random() * photoList.length);
+      let randomRight = Math.floor(Math.random() * photoList.length);
+      if (photoList[randomRight] === photoList[randomLeft]) {
+          alert("Hello Test Same Picture");
+          randomRight = Math.floor(Math.random() * photoList.length);
+          randomLeft = Math.floor(Math.random() * photoList.length);
+      }
+      document.getElementById("imageOnLeft").src = photoList[randomLeft];
+      document.getElementById("imageOnRight").src = photoList[randomRight];
+  });
+}
+changePicturesLeftAndRight();
 
 
-} 
-
-
-
-
-
-
-
-
-
-// let changePicturesLeftAndRight = () => {
+// const changePicturesLeftAndRight = () => {
 
 // let titleLeft = document.getElementById("titleLeft1");
 // titleLeft.addEventListener("click", () => {
@@ -116,8 +133,6 @@ const changePicturesLeftAndRight = () => {
 //       document.getElementById("imageOnLeft").src = photoList[randomLeft];
 //       document.getElementById("imageOnRight").src = photoList[randomRight]; 
 //     } 
-//     // if ()
-//     // photoList[i].trashPhotos.push;
 // }); 
 
 // let titleRight = document.getElementById("titleRight1");
@@ -132,7 +147,7 @@ const changePicturesLeftAndRight = () => {
 //       document.getElementById("imageOnRight").src = photoList[randomRight]; 
 //       document.getElementById("imageOnLeft").src = photoList[randomLeft];
 //     }
-//     // trashPhotos.push;
+   
 // });
 
 // }
