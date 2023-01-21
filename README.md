@@ -4,14 +4,3 @@ The Photo Project is a small game App to find your next travel destination by se
 the ones you love will lead you to your next journey ✈ 
 
 
-What is done : 
-    . 
-    .
-    .
-    .
-    
-What to do :
-    .
-    .
-    .
-    .
