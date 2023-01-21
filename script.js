@@ -18,27 +18,27 @@ let photographies = {
 
         bolivia: {
           file: ["./bolivia/bolivia1.jpg", "./bolivia/bolivia2.jpg", "./bolivia/bolivia3.jpg", "./bolivia/bolivia4.jpg"],
-          score: "scoreBolivia",
+          score: scoreBolivia,
         }, 
         hawaii: {
           file: ["./hawaii/hawaii1.jpg", "./hawaii/hawaii2.jpg", "./hawaii/hawaii3.jpg", "./hawaii/hawaii4.jpg"],
-          score: "scoreHawaii",
+          score: scoreHawaii,
         }, 
         italy: {
           file: ["./italy/italy1.jpg", "./italy/italy2.jpg", "./italy/italy3.jpg", "./italy/italy4.jpg"],
-          score: "scoreItaly",
+          score: scoreItaly,
         }, 
         nepal: {
           file: ["./nepal/nepal1.jpg", "./nepal/nepal2.jpg", "./nepal/nepal3.jpg", "./nepal/nepal.jpg"],
-          score: "scoreNepal",
+          score: scoreNepal,
         },
         newzealand: {
           file: ["./newzealand/newzealand1.jpg", "./newzealand/newzealand2.jpg", "./newzealand/newzealand3.jpg", "./newzealand/newzealand4.jpg"],
-          score: "scoreNewzealand",
+          score: scoreNewzealand,
         },
         utah: {
           file: ["./utah/utah1.jpg", "./utah/utah2.jpg", "./utah/utah3.jpg", "./utah/utah4.jpg"],
-          score: "scoreUtah",
+          score: scoreUtah,
         }
 }
 
@@ -100,6 +100,8 @@ const changePicturesLeftAndRight = () => {
 
       document.getElementById("imageOnRight").src = photoList[randomRight];
       document.getElementById("imageOnLeft").src = photoList[randomLeft];
+
+      // WHEN CLICK PUSH TO TRASH PHOTOS AND DELETE FROM PHOTOLIST
       
       previousLeft = randomLeft;
       previousRight = randomRight;
