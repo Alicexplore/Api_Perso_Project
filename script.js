@@ -86,7 +86,7 @@ const changePicturesLeftAndRight = () => {
       let randomLeft = Math.floor(Math.random() * photoList.length); 
 
       if (photoList[randomRight] === photoList[randomLeft]) {  // NEVER THE SAME ON LEFT AND RIGHT AS SAME TIME
-        alert("Hello Test Same Picture");
+        // alert("Hello Test Same Picture");
         randomRight = Math.floor(Math.random() * photoList.length);
         randomLeft = Math.floor(Math.random() * photoList.length);
       }
@@ -114,18 +114,18 @@ const changePicturesLeftAndRight = () => {
       let randomRight = Math.floor(Math.random() * photoList.length);
 
       if (photoList[randomRight] === photoList[randomLeft]) {  // NEVER THE SAME ON LEFT AND RIGHT AS SAME TIME
-        alert("Hello Test Same Picture");
+        // alert("Hello Test Same Picture");
         randomRight = Math.floor(Math.random() * photoList.length);
         randomLeft = Math.floor(Math.random() * photoList.length);
       }
 
       while (randomRight === previousRight || randomRight === previousLeft) {  // NEVER THE SAME TWICE ON EACH SIDES
           randomRight = Math.floor(Math.random() * photoList.length);
-          alert("Hello Test Doubles");
+          // alert("Hello Test Doubles");
       }
       while (randomLeft === previousLeft || randomLeft === previousRight) {
           randomLeft = Math.floor(Math.random() * photoList.length);
-          alert("Hello Test Doubles");
+          // alert("Hello Test Doubles");
       }
 
       document.getElementById("imageOnLeft").src = photoList[randomLeft];
