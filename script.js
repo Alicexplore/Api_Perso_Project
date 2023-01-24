@@ -18,7 +18,7 @@ let photographies = {
 
         bolivia: {
           file: ["./bolivia/bolivia1.jpg", "./bolivia/bolivia2.jpg", "./bolivia/bolivia3.jpg", "./bolivia/bolivia4.jpg"],
-          score: "scoreBolivia",
+          score: "scoreBolivia", // function add points to bolivia ?
         }, 
         hawaii: {
           file: ["./hawaii/hawaii1.jpg", "./hawaii/hawaii2.jpg", "./hawaii/hawaii3.jpg", "./hawaii/hawaii4.jpg"],
@@ -74,9 +74,23 @@ var photoList = [
 
 /////////////////////////////////////////////////////// RANDOM PICTURES /////////////////////////////////////////////////////////////
 
+
+
 const changePicturesLeftAndRight = () => {
 
   let previousLeft, previousRight;
+  let displayedPhotos = [];
+
+  // ALL IMAGES HAS BEEN DISPLAYED
+
+  function displayRandomImage() {
+    if (photoList.length == displayedPhotos.length) {
+      alert("Hello Test All images displayed");
+      return;
+    }
+  };
+  
+  displayRandomImage();
 
   // LEFT PICTURES
 
@@ -91,6 +105,10 @@ const changePicturesLeftAndRight = () => {
         randomLeft = Math.floor(Math.random() * photoList.length);
       }
 
+      while (displayed.indexOf(randomRight) != -1) {  // CHECK IF THE IMAGE HAS ALREADY BEEN DISPLAYED ON LEFT
+        randomRight = Math.floor(Math.random() * photoList.length);
+      }
+
       while (randomRight === previousRight || randomRight === previousLeft) {  // NEVER THE SAME TWICE ON EACH SIDES
           randomRight = Math.floor(Math.random() * photoList.length);
       }
@@ -100,6 +118,9 @@ const changePicturesLeftAndRight = () => {
 
       document.getElementById("imageOnRight").src = photoList[randomRight];
       document.getElementById("imageOnLeft").src = photoList[randomLeft];
+
+      displayedPhotos.push(randomRight);
+      displayedPhotos.push(randomLeft);
 
       previousLeft = randomLeft;
       previousRight = randomRight;
