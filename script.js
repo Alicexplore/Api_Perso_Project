@@ -1,6 +1,6 @@
 /////////////////////////////////////////////////////// WINDOW POP UP OPENING /////////////////////////////////////////////////////////////
 
-window.addEventListener("load", function(){
+window.addEventListener("load", function(){ // OPEN
   setTimeout(
       function open(event){
           document.querySelector(".popup").style.display = "block";
@@ -8,13 +8,13 @@ window.addEventListener("load", function(){
       500
   )
 });
-document.querySelector("#close").addEventListener("click", function(){
+document.querySelector("#close").addEventListener("click", function(){ //CLOSE
   document.querySelector(".popup").style.display = "none";
 });
 
 /////////////////////////////////////////////////////// TRYING OBJECTS /////////////////////////////////////////////////////////////
 
-// var pictures = [
+// let pictures = [
 
 //         {
 //           file: ["./bolivia/bolivia1.jpg", "./bolivia/bolivia2.jpg", "./bolivia/bolivia3.jpg", "./bolivia/bolivia4.jpg"],
@@ -77,47 +77,45 @@ var photoList = [
 const changePicturesLeftAndRight = () => {
 
   let previousLeft, previousRight;
-
-  var displayedPhotos = [];
-
-  // ALL IMAGES HAS BEEN DISPLAYED
-
-  function displayRandomImage() {
-    if (photoList.length == displayedPhotos.length) {
-      alert("Hello Test All images displayed");
-      return;
-    }
-  };
   
-  displayRandomImage();
+  var displayedPhotos = [];
 
   // LEFT PICTURES
 
-  let titleLeft = document.getElementById("titleLeft1");  
-  titleLeft.addEventListener("click", () => {
+  let imageLeft = document.getElementById("imageLeft");  
+  imageLeft.addEventListener("click", () => {
 
-      if (photoList[randomLeft] === displayedPhotos || photoList[randomRight] === displayedPhotos ){       // TELL THAT I WANT THE PLAYED ONES NOT BE PLAYED AGAIN
-        alert("Hello Test already played");
-      }
-
+      let randomLeft = Math.floor(Math.random() * photoList.length);
       let randomRight = Math.floor(Math.random() * photoList.length);
-      let randomLeft = Math.floor(Math.random() * photoList.length); 
 
-      displayedPhotos.push(randomRight);  // NEVER THE SAME ON LEFT AND RIGHT AS SAME TIME
-      displayedPhotos.push(randomLeft);
+      if (!displayedPhotos.includes(randomLeft) || !displayedPhotos.includes(randomRight) ){ // IF DISPLAYED DOESN'T INCLUDS THE RANDOM THEN, ELSE
+        console.log("tout est ok");
+        console.log("displayedP :" + displayedPhotos, "randomL :" +  randomLeft, "randomR :" +  randomRight);
+        displayedPhotos.push(randomRight);  
+        displayedPhotos.push(randomLeft);
+        console.log("displayedP after push :" + displayedPhotos);
+      } else {
+        console.log("tout n'est pas ok");
+        console.log("randomL :" +  randomLeft, "randomR :" +  randomRight)
+      };
 
-      if (photoList[randomRight] === photoList[randomLeft]) {  // NEVER THE SAME ON LEFT AND RIGHT AS SAME TIME
+      if (randomRight === randomLeft) {  // NEVER THE SAME ON LEFT AND RIGHT AS SAME TIME
         alert("Hello Test Same Picture");
         randomRight = Math.floor(Math.random() * photoList.length);
         randomLeft = Math.floor(Math.random() * photoList.length);
-      }
+      };
 
       while (randomRight === previousRight || randomRight === previousLeft) {  // NEVER THE SAME TWICE ON EACH SIDES
-          randomRight = Math.floor(Math.random() * photoList.length);
-      }
+          randomRight = Math.floor(Math.random() * photoList.length);  
+      };
       while (randomLeft === previousLeft || randomLeft === previousRight) {
           randomLeft = Math.floor(Math.random() * photoList.length);
-      }
+      };
+
+      if (photoList.length == displayedPhotos.length) { // USE THIS IF FOR CALCULATE WINNER COUNTRY
+             alert("Hello Test All images displayed");
+             return;
+           };
 
       document.getElementById("imageOnRight").src = photoList[randomRight];
       document.getElementById("imageOnLeft").src = photoList[randomLeft];
@@ -126,12 +124,12 @@ const changePicturesLeftAndRight = () => {
 
   // RIGHT PICTURES
 
-  let titleRight = document.getElementById("titleRight1");  
-  titleRight.addEventListener("click", () => {
+  let imageRight = document.getElementById("imageRight");  
+  imageRight.addEventListener("click", () => {
       let randomLeft = Math.floor(Math.random() * photoList.length);
       let randomRight = Math.floor(Math.random() * photoList.length);
 
-      if (photoList[randomRight] === photoList[randomLeft]) {  // NEVER THE SAME ON LEFT AND RIGHT AS SAME TIME
+      if (randomRight === randomLeft) {  // NEVER THE SAME ON LEFT AND RIGHT AS SAME TIME
         alert("Hello Test Same Picture");
         randomRight = Math.floor(Math.random() * photoList.length);
         randomLeft = Math.floor(Math.random() * photoList.length);
@@ -153,6 +151,19 @@ const changePicturesLeftAndRight = () => {
 };
 
 changePicturesLeftAndRight();
+
+//////////////////////////////////////// NO MORE TO PLAY = PUT IN THE CONT CHANGEPICTURES /////////////////////////////////////////////
+
+// var displayedPhotos = [];
+
+// const displayRandomImage = () => {
+//   if (photoList.length == displayedPhotos.length) {
+//     alert("Hello Test All images displayed");
+//     return;
+//   }
+// };
+
+// displayRandomImage();
 
 /////////////////////////////////////////////////////// SCORE VARIABLES /////////////////////////////////////////////////////////////
 
