@@ -137,14 +137,15 @@ body {
     line-height: 50vw;
     text-align: center; 
     transition: 2s ease;
-    font-variation-settings: "wght" 311; 
+    /* font-variation-settings: "wght" 311;  */
 }
 
 .image__description__left:hover {
-    font-variation-settings: "wght" 1000; 
+    /* font-variation-settings: "wght" 1000; 
     letter-spacing: 50px;
-    opacity: 0%;
+    opacity: 0%; */
     transition: all 2s;
+    opacity: 0%;
     /* transition: all 2s; */
     /* opacity: 50%; 
     transition: all 2s;   */
@@ -161,14 +162,15 @@ body {
     line-height: 50vw;
     text-align: center; 
     transition: 2s ease;
-    font-variation-settings: "wght" 311; 
+    /* font-variation-settings: "wght" 311;  */
 }
 
 .image__description__right:hover {
-    font-variation-settings: "wght" 1000; 
+    /* font-variation-settings: "wght" 1000; 
     letter-spacing: 50px;
+    opacity: 0%;*/
+    transition: all 2s; 
     opacity: 0%;
-    transition: all 2s;
 }
 
 

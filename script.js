@@ -79,7 +79,9 @@ const changePicturesLeftAndRight = () => {
   let previousLeft, previousRight;
 
   var displayedPhotos = [];
-  
+
+  // ALL IMAGES HAS BEEN DISPLAYED
+
   function displayRandomImage() {
     if (photoList.length == displayedPhotos.length) {
       alert("Hello Test All images displayed");
@@ -89,14 +91,20 @@ const changePicturesLeftAndRight = () => {
   
   displayRandomImage();
 
-  // ALL IMAGES HAS BEEN DISPLAYED
-
   // LEFT PICTURES
 
   let titleLeft = document.getElementById("titleLeft1");  
   titleLeft.addEventListener("click", () => {
+
+      if (photoList[randomLeft] === displayedPhotos || photoList[randomRight] === displayedPhotos ){       // TELL THAT I WANT THE PLAYED ONES NOT BE PLAYED AGAIN
+        alert("Hello Test already played");
+      }
+
       let randomRight = Math.floor(Math.random() * photoList.length);
       let randomLeft = Math.floor(Math.random() * photoList.length); 
+
+      displayedPhotos.push(randomRight);  // NEVER THE SAME ON LEFT AND RIGHT AS SAME TIME
+      displayedPhotos.push(randomLeft);
 
       if (photoList[randomRight] === photoList[randomLeft]) {  // NEVER THE SAME ON LEFT AND RIGHT AS SAME TIME
         alert("Hello Test Same Picture");
@@ -113,9 +121,6 @@ const changePicturesLeftAndRight = () => {
 
       document.getElementById("imageOnRight").src = photoList[randomRight];
       document.getElementById("imageOnLeft").src = photoList[randomLeft];
-
-      displayedPhotos.push(randomRight);
-      displayedPhotos.push(randomLeft);
 
   });
 
