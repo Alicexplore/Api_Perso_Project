@@ -77,10 +77,9 @@ var photoList = [
 const changePicturesLeftAndRight = () => {
 
   let previousLeft, previousRight;
-  let displayedPhotos = [];
 
-  // ALL IMAGES HAS BEEN DISPLAYED
-
+  var displayedPhotos = [];
+  
   function displayRandomImage() {
     if (photoList.length == displayedPhotos.length) {
       alert("Hello Test All images displayed");
@@ -89,6 +88,8 @@ const changePicturesLeftAndRight = () => {
   };
   
   displayRandomImage();
+
+  // ALL IMAGES HAS BEEN DISPLAYED
 
   // LEFT PICTURES
 
