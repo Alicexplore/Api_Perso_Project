@@ -141,57 +141,15 @@ body {
     
 }
 
-#imageOnLeft, #imageOnRight {
+/* #imageOnLeft, #imageOnRight {
     transition: all 0.5s ease-in-out;
-  }
+  } */
 
-/* .image__description__left:before {
-    content: "mmm...";
-    font-size: 1.2vw; 
-    cursor: pointer;
-    line-height: 50vw;
-    position:absolute;
-    color:#ffffff;
-    top:0;
-    left:0;
-    width:0%;
-    overflow:hidden;
-    transition:all 0.7s; 
-    text-align: center;
-}
-.image__description__left:hover:before{
-    width:100%;
-} */
 
 .image__description__right {
     font-size: 1.2vw; 
     cursor: pointer;
     line-height: 50vw;
-    text-align: center;
-}
-
-/* .image__description__right:before {
-    content:"well... maybe";
-    font-size: 1.2vw; 
-    cursor: pointer;
-    line-height: 50vw;
-    position:absolute;
-    color:#ffffff;
-    top:0;
-    left:0;
-    width:0%;
-    overflow:hidden;
-    transition:all 0.7s;
-    text-align: center;
-}
-.image__description__right:hover:before{
-    width:100%;
-} */
-
-.image__credit {
-    opacity: 40%;
-    font-size: 0.6vw;
-    margin-top: 0.25em;
     text-align: center;
 }
 
