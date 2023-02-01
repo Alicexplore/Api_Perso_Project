@@ -17,14 +17,23 @@ body {
     box-sizing: border-box;
 }
 
+.backdrop {
+    position: fixed; 
+    top: 0; left: 0; 
+    width: 100%; 
+    height: 100%; 
+    background-color: rgba(0, 0, 0, 0.5); 
+    z-index: 10;
+}
+
 .disable-cursor-effects {
     cursor: default;
   }
 
 .popup{
-    background-color: #f1f1f1;
+    background-color: #F2F2F2;
     width: 430px;
-    padding: 30px 40px;
+    padding: 40px 40px;
     position: absolute;
     transform: translate(-50%,-50%);
     left: 50%;
@@ -45,22 +54,46 @@ body {
 
 .littlelogo {
     text-align: center;
-    margin-top: -2vw; 
+    margin-top: -8vw; 
     width: 70%;
     line-height: 25px;
 }
 
 .popup button{
-    display: block;
-    margin:  0 0 20px auto;
-    background-color: transparent;
-    font-size: 30px;
-    color: #00c6e0;
-    border: none;
-    outline: none;
+    margin-top: 1.3vw;
+    outline: 0;
+    grid-gap: 8px;
+    align-items: center;
+    background: 0 0;
+    border: 2px solid #222222;
+    color: #222222;
+    border-radius: 4px;
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
     cursor: pointer;
-    
+    display: inline-flex;
+    flex-shrink: 0;
+    font-size: 16px;
+    gap: 8px;
+    justify-content: center;
+    line-height: 1.5;
+    overflow: hidden;
+    padding: 20px 37px;
+    text-decoration: none;
+    text-overflow: ellipsis;
+    transition: all .14s ease-out;
+    white-space: nowrap;  
 }
+
+.popup button:hover {
+    box-shadow: 4px 4px 0 #222222;
+    transform: translate(-4px,-4px);
+}
+
+.popup button:focus-visible{
+    outline-offset: 1px;
+}
+
 .popup p{
     font-size: 1.3vw;
     text-align: center;

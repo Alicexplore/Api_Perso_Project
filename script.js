@@ -8,8 +8,10 @@ window.addEventListener("load", function(){ // OPEN
       500
   )
 });
-document.querySelector("#close").addEventListener("click", function(){ //CLOSE
+  document.querySelector("#close").addEventListener("click", function(){ //CLOSE 
   document.querySelector(".popup").style.display = "none";
+  document.querySelector(".backdrop").style.display = "none";
+
 });
 
 /////////////////////////////////////////////////////// TRYING OBJECTS /////////////////////////////////////////////////////////////
