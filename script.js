@@ -97,6 +97,8 @@ const changePicturesLeftAndRight = () => {
       } else {
         console.log("tout n'est pas ok");
         console.log("randomL :" +  randomLeft, "randomR :" +  randomRight)
+        randomLeft = Math.floor(Math.random() * photoList.length);
+        alert("already played")
       };
 
       if (randomRight === randomLeft) {  // NEVER THE SAME ON LEFT AND RIGHT AS SAME TIME
@@ -108,11 +110,12 @@ const changePicturesLeftAndRight = () => {
       while (randomRight === previousRight || randomRight === previousLeft) {  // NEVER THE SAME TWICE ON EACH SIDES
           randomRight = Math.floor(Math.random() * photoList.length);  
       };
+
       while (randomLeft === previousLeft || randomLeft === previousRight) {
           randomLeft = Math.floor(Math.random() * photoList.length);
       };
 
-      if (photoList.length == displayedPhotos.length) { // USE THIS IF FOR CALCULATE WINNER COUNTRY
+      if (photoList.length == displayedPhotos.length) { // USE THIS AS A START FOR CALCULATE WINNER COUNTRY
              alert("Hello Test All images displayed");
              return;
            };
