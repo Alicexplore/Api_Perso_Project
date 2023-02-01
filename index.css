@@ -40,14 +40,14 @@ body {
     font-family: "apercu", sans-serif;
     font-weight: 900;
     font-size: 2vw;
-    margin-top: 2vw;
+    margin-top: 1vw;
     color: #222222;
 }
 
 .littlelogo {
     text-align: center;
     margin-top: -2vw; 
-    width: 50%;
+    width: 60%;
     line-height: 25px;
 }
 
@@ -65,9 +65,10 @@ body {
 .popup p{
     font-size: 1.3vw;
     text-align: center;
-    margin: 20px 0;
+    margin: 20px 40px;
     margin-top: 55px;  
-    line-height: 25px;
+    line-height: 20px;
+    font-family: "apercu", sans-serif;
     justify-content: center;
     color: #222222;
     margin-top: 3vw;
@@ -139,6 +140,10 @@ body {
     text-align: center;
     
 }
+
+#imageOnLeft, #imageOnRight {
+    transition: all 0.5s ease-in-out;
+  }
 
 /* .image__description__left:before {
     content: "mmm...";
