@@ -8,10 +8,10 @@ window.addEventListener("load", function(){ // OPEN
       500
   )
 });
+
   document.querySelector("#close").addEventListener("click", function(){ //CLOSE 
   document.querySelector(".popup").style.display = "none";
   document.querySelector(".backdrop").style.display = "none";
-
 });
 
 /////////////////////////////////////////////////////// TRYING OBJECTS /////////////////////////////////////////////////////////////
@@ -91,17 +91,19 @@ const changePicturesLeftAndRight = () => {
       let randomRight = Math.floor(Math.random() * photoList.length);
 
       if (!displayedPhotos.includes(randomLeft) || !displayedPhotos.includes(randomRight) ){ // IF DISPLAYED DOESN'T INCLUDS THE RANDOM THEN, ELSE
-        console.log("tout est ok");
+        console.log("good");
         console.log("displayedP :" + displayedPhotos, "randomL :" +  randomLeft, "randomR :" +  randomRight);
+        alert("not played again")
         displayedPhotos.push(randomRight);  
         displayedPhotos.push(randomLeft);
+        // splice
         console.log("displayedP after push :" + displayedPhotos);
       } else {
-        console.log("tout n'est pas ok");
-        console.log("randomL :" +  randomLeft, "randomR :" +  randomRight)
+        console.log("bad");
+        console.log("randomL :" +  randomLeft, "randomR :" +  randomRight);
         randomLeft = Math.floor(Math.random() * photoList.length);
         alert("already played")
-      };
+      };    
 
       if (randomRight === randomLeft) {  // NEVER THE SAME ON LEFT AND RIGHT AS SAME TIME
         alert("Hello Test Same Picture");
@@ -157,19 +159,6 @@ const changePicturesLeftAndRight = () => {
 
 changePicturesLeftAndRight();
 
-//////////////////////////////////////// NO MORE TO PLAY = PUT IN THE CONT CHANGEPICTURES /////////////////////////////////////////////
-
-// var displayedPhotos = [];
-
-// const displayRandomImage = () => {
-//   if (photoList.length == displayedPhotos.length) {
-//     alert("Hello Test All images displayed");
-//     return;
-//   }
-// };
-
-// displayRandomImage();
-
 /////////////////////////////////////////////////////// SCORE VARIABLES /////////////////////////////////////////////////////////////
 
 let scoreNewzealand = 0
@@ -178,10 +167,6 @@ let scoreHawaii = 0
 let scoreNepal = 0
 let scoreBolivia = 0
 let scoreUtah = 0
-
-///////////////////////////////////////////////////////////// TRASH /////////////////////////////////////////////////////////////////
-
-let trashPhotos = []
 
 /////////////////////////////////////////////////////// LANSCAPE PHOTOS /////////////////////////////////////////////////////////////
 

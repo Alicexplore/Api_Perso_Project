@@ -157,7 +157,7 @@ body {
 }
 
 .image__overlay--blur {
-    backdrop-filter: blur(10px); /* backdrop-filter: blur(5px);  */
+    backdrop-filter: blur(10px); 
 }
 
 .image__overlay:hover {
@@ -165,41 +165,25 @@ body {
 }
 
 .image__description__left {
-    font-size: 1.2vw; /*1.2*/
+    font-size: 1.2vw; 
     cursor: pointer;
     text-align: center; 
     transition: 2s ease;
-    /* font-variation-settings: "wght" 311;  */
 }
 
 .image__description__left:hover {
-    /* font-variation-settings: "wght" 1000; 
-    letter-spacing: 50px;
-    opacity: 0%; */
     transition: all 2s;
     opacity: 0%;
-    /* transition: all 2s; */
-    /* opacity: 50%; 
-    transition: all 2s;   */
 }
 
-/* #imageOnLeft, #imageOnRight {
-    transition: all 0.5s ease-in-out;
-  } */
-
-
 .image__description__right {
-    font-size: 1.2vw; /*1.2*/
+    font-size: 1.2vw; 
     cursor: pointer;
     text-align: center; 
     transition: 2s ease;
-    /* font-variation-settings: "wght" 311;  */
 }
 
 .image__description__right:hover {
-    /* font-variation-settings: "wght" 1000; 
-    letter-spacing: 50px;
-    opacity: 0%;*/
     transition: all 2s; 
     opacity: 0%;
 }
