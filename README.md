@@ -5,7 +5,7 @@ the ones you love will lead you to your next journey ✈
 
 <br />
 
-### About this project
+## About this project
 Worked on a little idea called “The Photo Project”, which aims to help you discover your next journey by selecting stunning photographs. 📸
 <br /><br />
 It's a really interesting exercise to see that starting with a simple project idea, things quickly become very complicated for a beginner like me.
@@ -20,21 +20,20 @@ Postscript: This project is under construction/modification.
 
 <br />
 
-### Preview
+## Preview
 
-<video src="https://user-images.githubusercontent.com/102388803/216827014-f6334dda-1196-4f10-a433-d8def7dd1e0d.webm">
-
+[The_Photo_Project.webm](https://user-images.githubusercontent.com/102388803/216827014-f6334dda-1196-4f10-a433-d8def7dd1e0d.webm)
   
 <br />
 
-### Languages & tools
+## Languages & tools
 
 
 [![My Skills](https://skillicons.dev/icons?i=js,html,css,vscode,ai,github,git)](https://skillicons.dev)
 
 <br />
 
-### Resources 
+## Resources 
 
 • https://unsplash.com/
 
