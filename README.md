@@ -5,7 +5,7 @@ the ones you love will lead you to your next journey ✈
 
 <br />
 
-### Project Description
+### About this project
 Worked on a little idea called “The Photo Project”, which aims to help you discover your next journey by selecting stunning photographs. 📸
 <br /><br />
 It's a really interesting exercise to see that starting with a simple project idea, things quickly become very complicated for a beginner like me.
