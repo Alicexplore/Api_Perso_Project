@@ -22,8 +22,8 @@ Postscript: This project is under construction/modification.
 
 ## Preview
 
-[The_Photo_Project.webm](https://user-images.githubusercontent.com/102388803/216827014-f6334dda-1196-4f10-a433-d8def7dd1e0d.webm)
-  
+![The_Photo_Project](https://user-images.githubusercontent.com/102388803/216838666-38d83132-6c54-4745-ab4c-8d006c687fd1.gif)
+
 <br />
 
 ## Languages & tools
