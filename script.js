@@ -20,28 +20,28 @@ window.addEventListener("load", function(){ // OPEN
 
 //         {
 //           file: ["./bolivia/bolivia1.jpg", "./bolivia/bolivia2.jpg", "./bolivia/bolivia3.jpg", "./bolivia/bolivia4.jpg"],
-//           country: "bolivia"}, 
-        
+//           country: "bolivia",
+//           }, 
 //         {
 //           file: ["./hawaii/hawaii1.jpg", "./hawaii/hawaii2.jpg", "./hawaii/hawaii3.jpg", "./hawaii/hawaii4.jpg"],
 //           country: "hawaii",
-//         }, 
+//           }, 
 //         {
 //           file: ["./italy/italy1.jpg", "./italy/italy2.jpg", "./italy/italy3.jpg", "./italy/italy4.jpg"],
 //           country: "italy",
-//         }, 
+//           }, 
 //         {
 //           file: ["./nepal/nepal1.jpg", "./nepal/nepal2.jpg", "./nepal/nepal3.jpg", "./nepal/nepal.jpg"],
 //           country: "nepal",
-//         },
+//           },
 //         {
 //           file: ["./newzealand/newzealand1.jpg", "./newzealand/newzealand2.jpg", "./newzealand/newzealand3.jpg", "./newzealand/newzealand4.jpg"],
 //           country: "newzealand",
-//         },
+//           },
 //         {
 //           file: ["./utah/utah1.jpg", "./utah/utah2.jpg", "./utah/utah3.jpg", "./utah/utah4.jpg"],
 //           country: "utah",
-//         }
+//           }
 //    ]
 
 
@@ -96,10 +96,10 @@ const changePicturesLeftAndRight = () => {
         alert("not played again")
         displayedPhotos.push(randomRight);  
         displayedPhotos.push(randomLeft);
-        // splice
+        // splice dis from ran doesn't work
         console.log("displayedP after push :" + displayedPhotos);
       } else {
-        console.log("bad");
+        console.log("not good");
         console.log("randomL :" +  randomLeft, "randomR :" +  randomRight);
         randomLeft = Math.floor(Math.random() * photoList.length);
         alert("already played")
@@ -111,7 +111,7 @@ const changePicturesLeftAndRight = () => {
         randomLeft = Math.floor(Math.random() * photoList.length);
       };
 
-      while (randomRight === previousRight || randomRight === previousLeft) {  // NEVER THE SAME TWICE ON EACH SIDES
+      while (randomRight === previousRight || randomRight === previousLeft) {  // NEVER THE SAME TWICE ON EACH SIDE
           randomRight = Math.floor(Math.random() * photoList.length);  
       };
 
@@ -180,6 +180,10 @@ let winnerBolivia = ""
 let winnerUtah = ""
 
 /////////////////////////////////////////////// TRYING FONCTIONALITY NOT SAME COUNTRY ////////////////////////////////////////////////
+
+
+
+
 
 
 
