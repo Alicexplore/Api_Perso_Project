@@ -134,8 +134,8 @@ function changePicturesLeftAndRight() {
      
     document.getElementById("imageOnRight").src = photoListRight[randomRight];
   
-    if (displayedPhotosLeft.length === photoListLeft.length && displayedPhotosRight.length === photoListRight.length) {
-      alert("All pictures have been played.");
+    if (displayedPhotosLeft.length === photoListLeft.length + 1 && displayedPhotosRight.length === photoListRight.length + 1) {
+      alert("All pictures have been played."); // HERE WROTE THE EVENT TO DISPLAY THE SCORES
     }
   });
   
@@ -156,7 +156,7 @@ function changePicturesLeftAndRight() {
   
     document.getElementById("imageOnLeft").src = photoListLeft[randomLeft];
   
-    if (displayedPhotosLeft.length === photoListLeft.length && displayedPhotosRight.length === photoListRight.length) {
+    if (displayedPhotosLeft.length === photoListLeft.length - 1 && displayedPhotosRight.length === photoListRight.length - 1) {
       alert("All pictures have been played.");
     }
   });
