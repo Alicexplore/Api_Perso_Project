@@ -30,6 +30,8 @@ body {
     cursor: default;
   }
 
+/****************************************************** POPUP WINDOW ***************************************************************/
+
 .popup{
     background-color: #F2F2F2;
     width: 400px;
@@ -105,7 +107,7 @@ body {
     margin-top: 2vw;
 }
 
-/* FIRST INPUT */
+/****************************************************** FIRST INPUT ***************************************************************/
 
 .switch {
     position: relative;
@@ -172,7 +174,7 @@ input:checked + .slider:before {
     border-radius: 50%;
   }
 
-/* SECOND INPUT */
+/****************************************************** SECOND INPUT ***************************************************************/
 
 .switch2 {
     position: relative;
@@ -203,7 +205,6 @@ input:checked + .slider:before {
   }
   
 .slider:before {
-    /* background-image: url(./ICONS/Ricksanchez_Plan\ de\ travail\ 1.png); */
     background-color: #F2F2F2;
     background-size: 100%;
     background-repeat: no-repeat;
@@ -238,6 +239,8 @@ input:checked + .slider:before {
 .slider.round:before {
     border-radius: 50%;
   }
+
+/****************************************************** IMAGES ***************************************************************/
 
 .image__img1 {
     width: 50vw;
@@ -289,6 +292,7 @@ input:checked + .slider:before {
     transition: opacity 3s;
     z-index: 1;
 }
+
 
 .image__overlay--blur {
     backdrop-filter: blur(10px); 
