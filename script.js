@@ -111,128 +111,52 @@ function changePicturesLeftAndRight() {
   let imageRight = document.getElementById("imageRight");
 
   imageLeft.addEventListener("click", () => {
-    let randomLeft = Math.floor(Math.random() * photoListLeft.length);
-    if (!displayedPhotos.includes(randomLeft)) { 
-      displayedPhotos.push(randomLeft);
-      alert("not played again");
-    } else {
-      alert("already played");
-      return; // don't display the same photo again
-    };
-
+    let randomLeft;
+    do {
+      randomLeft = Math.floor(Math.random() * photoListLeft.length);
+    } while (displayedPhotos.includes(randomLeft));
+  
+    displayedPhotos.push(randomLeft);
+  
+    document.getElementById("imageOnLeft").src = photoListLeft[randomLeft];
     let randomRight;
     do {
       randomRight = Math.floor(Math.random() * photoListRight.length);
     } while (displayedPhotos.includes(randomRight));
     displayedPhotos.push(randomRight);
-
-    document.getElementById("imageOnLeft").src = photoListLeft[randomLeft];
+     
     document.getElementById("imageOnRight").src = photoListRight[randomRight];
+  
+    if (displayedPhotos.length === photoListLeft.length && displayedPhotos.length === photoListRight.length) {
+      alert("All pictures have been played.");
+    }
   });
-
+  
   imageRight.addEventListener("click", () => {
-    let randomRight = Math.floor(Math.random() * photoListRight.length);
-    if (!displayedPhotos.includes(randomRight)) { 
-      displayedPhotos.push(randomRight);
-      alert("not played again");
-    } else {
-      alert("already played");
-      return; // don't display the same photo again
-    };
-
+    let randomRight;
+    do {
+      randomRight = Math.floor(Math.random() * photoListRight.length);
+    } while (displayedPhotos.includes(randomRight));
+  
+    displayedPhotos.push(randomRight);
+  
+    document.getElementById("imageOnRight").src = photoListRight[randomRight];
     let randomLeft;
     do {
       randomLeft = Math.floor(Math.random() * photoListLeft.length);
     } while (displayedPhotos.includes(randomLeft));
     displayedPhotos.push(randomLeft);
-
+  
     document.getElementById("imageOnLeft").src = photoListLeft[randomLeft];
-    document.getElementById("imageOnRight").src = photoListRight[randomRight];
+  
+    if (displayedPhotos.length === photoListLeft.length && displayedPhotos.length === photoListRight.length) {
+      alert("All pictures have been played.");
+    }
   });
-}
+
+};
 
 changePicturesLeftAndRight();
-
-// function changePicturesLeftAndRight() {
-
-//   var displayedPhotos = [];
-
-//   let imageLeft = document.getElementById("imageLeft");
-//   imageLeft.addEventListener("click", () => {
-
-//     let randomLeft = Math.floor(Math.random() * photoListLeft.length);
-//     if (!displayedPhotos.includes(randomLeft)) { 
-//       displayedPhotos.push(randomLeft);
-//       alert("not played again");
-//     } else {
-//       randomLeft = Math.floor(Math.random() * photoListLeft.length);
-//       alert("already played");
-//     };
-
-//     document.getElementById("imageOnLeft").src = photoListLeft[randomLeft];
-
-//   });
-
-//   let imageRight = document.getElementById("imageRight");
-//   imageRight.addEventListener("click", () => {
-
-//     let randomRight = Math.floor(Math.random() * photoListRight.length);
-//     if (!displayedPhotos.includes(randomRight)) { 
-//       displayedPhotos.push(randomRight);
-//       alert("not played again");
-//     } else {
-//       randomRight = Math.floor(Math.random() * photoListRight.length);
-//       alert("already played");
-//     };
-
-//     document.getElementById("imageOnRight").src = photoListRight[randomRight];
-
-//   });
-
-// }
-
-// changePicturesLeftAndRight();
-    
-
-    // photoList = photoList.filter(photo => photo !== randomLeft);
-    // let randomRight = Math.floor(Math.random() * photoList.length);
-    // while (randomLeft === randomRight) {
-    //   alert("Hello Test Same Picture");
-    //   randomRight = Math.floor(Math.random() * photoList.length);
-    // }
-    // if (!displayedPhotos.includes(randomLeft)) { // IF DISPLAYED DOESN'T INCLUDS THE RANDOM THEN, ELSE
-    //   // displayedPhotos.push(randomRight);  
-    //   displayedPhotos.push(randomLeft);
-    //   alert("not played again");
-    // } else {
-    //   randomLeft = Math.floor(Math.random() * photoList.length);
-    //   alert("already played");
-    // };
-
-    // let randomIndex = Math.floor(Math.random() * photoList);
-
-    // while (displayedPhotos.includes(randomIndex)) {
-    //   randomIndex = Math.floor(Math.random() * photoList.length);
-    // }
-
-
-    // if (randomRight === randomLeft) {  
-    //   alert("Hello Test Same Picture");
-    //   randomRight = Math.floor(Math.random() * photoList.length);
-    //   randomLeft = Math.floor(Math.random() * photoList.length);
-    // };
-    // while (randomRight === previousRight || randomRight === previousLeft) { 
-    //     randomRight = Math.floor(Math.random() * photoList.length);  
-    // };
-    // while (randomLeft === previousLeft || randomLeft === previousRight) {
-    //     randomLeft = Math.floor(Math.random() * photoList.length);
-    // };
-    // if (photoList.length == displayedPhotos.length) { // USE THIS AS A START FOR CALCULATE WINNER COUNTRY
-    //   alert("Hello Test All images displayed");
-    //   return;
-    // };
-
-    // document.getElementById("imageOnRight").src = photoList[randomRight];
 
 
 /////////////////////////////////////////////////////// SCORE VARIABLES /////////////////////////////////////////////////////////////
