@@ -117,6 +117,8 @@ function changePicturesLeftAndRight() {
   let imageLeft = document.getElementById("imageLeft");
   let imageRight = document.getElementById("imageRight");
 
+  // PHOTOS LEFT  
+
   imageLeft.addEventListener("click", () => {
     let randomLeft;
     do {
@@ -135,10 +137,12 @@ function changePicturesLeftAndRight() {
     document.getElementById("imageOnRight").src = photoListRight[randomRight];
   
     if (displayedPhotosLeft.length === photoListLeft.length + 1 && displayedPhotosRight.length === photoListRight.length + 1) {
-      alert("All pictures have been played."); // HERE WROTE THE EVENT TO DISPLAY THE SCORES
+      alert("All pictures have been played."); // HERE WROTE THE EVENT TO DISPLAY THE SCORES // CAREFUL +-1
     }
   });
   
+  // PHOTOS RIGHT
+
   imageRight.addEventListener("click", () => {
     let randomRight;
     do {
@@ -157,7 +161,7 @@ function changePicturesLeftAndRight() {
     document.getElementById("imageOnLeft").src = photoListLeft[randomLeft];
   
     if (displayedPhotosLeft.length === photoListLeft.length - 1 && displayedPhotosRight.length === photoListRight.length - 1) {
-      alert("All pictures have been played.");
+      alert("All pictures have been played."); // HERE WROTE THE EVENT TO DISPLAY THE SCORES // CAREFUL +-1
     }
   });
 
