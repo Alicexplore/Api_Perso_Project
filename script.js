@@ -14,35 +14,49 @@ window.addEventListener("load", function(){ // OPEN
   document.querySelector(".backdrop").style.display = "none";
 });
 
+/////////////////////////////////////////////////////// SCORE VARIABLES /////////////////////////////////////////////////////////////
+
+var scoreNewzealand = 0
+var scoreItaly = 0
+var scoreHawaii = 0
+var scoreNepal = 0
+var scoreBolivia = 0
+var scoreUtah = 0
+var scoreAustralia = 0
+var scoreCuba = 0
+var scoreIceland = 0
+var scoreIndia = 0
+var scoreJapan = 0
+var scoreKenya = 0
+
 /////////////////////////////////////////////////////// TRYING OBJECTS /////////////////////////////////////////////////////////////
 
-// let pictures = [
-
-//         {
-//           file: ["./bolivia/bolivia1.jpg", "./bolivia/bolivia2.jpg", "./bolivia/bolivia3.jpg", "./bolivia/bolivia4.jpg"],
-//           country: "bolivia",
-//           }, 
-//         {
-//           file: ["./hawaii/hawaii1.jpg", "./hawaii/hawaii2.jpg", "./hawaii/hawaii3.jpg", "./hawaii/hawaii4.jpg"],
-//           country: "hawaii",
-//           }, 
-//         {
-//           file: ["./italy/italy1.jpg", "./italy/italy2.jpg", "./italy/italy3.jpg", "./italy/italy4.jpg"],
-//           country: "italy",
-//           }, 
-//         {
-//           file: ["./nepal/nepal1.jpg", "./nepal/nepal2.jpg", "./nepal/nepal3.jpg", "./nepal/nepal.jpg"],
-//           country: "nepal",
-//           },
-//         {
-//           file: ["./newzealand/newzealand1.jpg", "./newzealand/newzealand2.jpg", "./newzealand/newzealand3.jpg", "./newzealand/newzealand4.jpg"],
-//           country: "newzealand",
-//           },
-//         {
-//           file: ["./utah/utah1.jpg", "./utah/utah2.jpg", "./utah/utah3.jpg", "./utah/utah4.jpg"],
-//           country: "utah",
-//           }
-//    ]
+var pictures = [
+        {
+          file: ["./bolivia/bolivia1.jpg", "./bolivia/bolivia2.jpg", "./bolivia/bolivia3.jpg", "./bolivia/bolivia4.jpg"],
+          country: scoreBolivia, 
+          },  
+        {
+          file: ["./hawaii/hawaii1.jpg", "./hawaii/hawaii2.jpg", "./hawaii/hawaii3.jpg", "./hawaii/hawaii4.jpg"],
+          country: scoreHawaii,
+          }, 
+        {
+          file: ["./italy/italy1.jpg", "./italy/italy2.jpg", "./italy/italy3.jpg", "./italy/italy4.jpg"],
+          country: scoreItaly,
+          }, 
+        {
+          file: ["./nepal/nepal1.jpg", "./nepal/nepal2.jpg", "./nepal/nepal3.jpg", "./nepal/nepal.jpg"],
+          country: scoreNepal,
+          },
+        {
+          file: ["./newzealand/newzealand1.jpg", "./newzealand/newzealand2.jpg", "./newzealand/newzealand3.jpg", "./newzealand/newzealand4.jpg"],
+          country: scoreNewzealand,
+          },
+        {
+          file: ["./utah/utah1.jpg", "./utah/utah2.jpg", "./utah/utah3.jpg", "./utah/utah4.jpg"],
+          country: scoreUtah,
+          }
+   ]
 
 
 /////////////////////////////////////////////////////// ARRAY OF PICTURES LEFTSIDE /////////////////////////////////////////////////////////////
@@ -74,8 +88,6 @@ var photoListLeft = [
   "./utah/utah4.jpg"
 ]
 
-/////////////////////////////////////////////////////// ARRAY OF PICTURES RIGHTSIDE /////////////////////////////////////////////////////////////
-
 var photoListRight = [
   "./australia/australia1.jpg",
   "./australia/australia2.jpg",
@@ -105,7 +117,8 @@ var photoListRight = [
 
 function changePicturesLeftAndRight() {
 
-  var displayedPhotos = [];
+  var displayedPhotosLeft = [];
+  var displayedPhotosRight = [];
 
   let imageLeft = document.getElementById("imageLeft");
   let imageRight = document.getElementById("imageRight");
@@ -114,20 +127,20 @@ function changePicturesLeftAndRight() {
     let randomLeft;
     do {
       randomLeft = Math.floor(Math.random() * photoListLeft.length);
-    } while (displayedPhotos.includes(randomLeft));
+    } while (displayedPhotosLeft.includes(randomLeft));
   
-    displayedPhotos.push(randomLeft);
+    displayedPhotosLeft.push(randomLeft);
   
     document.getElementById("imageOnLeft").src = photoListLeft[randomLeft];
     let randomRight;
     do {
       randomRight = Math.floor(Math.random() * photoListRight.length);
-    } while (displayedPhotos.includes(randomRight));
-    displayedPhotos.push(randomRight);
+    } while (displayedPhotosRight.includes(randomRight));
+    displayedPhotosRight.push(randomRight);
      
     document.getElementById("imageOnRight").src = photoListRight[randomRight];
   
-    if (displayedPhotos.length === photoListLeft.length && displayedPhotos.length === photoListRight.length) {
+    if (displayedPhotosLeft.length === photoListLeft.length && displayedPhotosRight.length === photoListRight.length) {
       alert("All pictures have been played.");
     }
   });
@@ -136,20 +149,20 @@ function changePicturesLeftAndRight() {
     let randomRight;
     do {
       randomRight = Math.floor(Math.random() * photoListRight.length);
-    } while (displayedPhotos.includes(randomRight));
+    } while (displayedPhotosRight.includes(randomRight));
   
-    displayedPhotos.push(randomRight);
+    displayedPhotosRight.push(randomRight);
   
     document.getElementById("imageOnRight").src = photoListRight[randomRight];
     let randomLeft;
     do {
       randomLeft = Math.floor(Math.random() * photoListLeft.length);
-    } while (displayedPhotos.includes(randomLeft));
-    displayedPhotos.push(randomLeft);
+    } while (displayedPhotosLeft.includes(randomLeft));
+    displayedPhotosLeft.push(randomLeft);
   
     document.getElementById("imageOnLeft").src = photoListLeft[randomLeft];
   
-    if (displayedPhotos.length === photoListLeft.length && displayedPhotos.length === photoListRight.length) {
+    if (displayedPhotosLeft.length === photoListLeft.length && displayedPhotosRight.length === photoListRight.length) {
       alert("All pictures have been played.");
     }
   });
@@ -158,19 +171,7 @@ function changePicturesLeftAndRight() {
 
 changePicturesLeftAndRight();
 
-
-/////////////////////////////////////////////////////// SCORE VARIABLES /////////////////////////////////////////////////////////////
-
-let scoreNewzealand = 0
-let scoreItaly = 0
-let scoreHawaii = 0
-let scoreNepal = 0
-let scoreBolivia = 0
-let scoreUtah = 0
-
 /////////////////////////////////////////////////////// LANSCAPE PHOTOS /////////////////////////////////////////////////////////////
-
-// landscapephotographies
 
 let winnerNewzealand = ""
 let winnerItaly = ""
@@ -180,6 +181,9 @@ let winnerBolivia = ""
 let winnerUtah = ""
 
 /////////////////////////////////////////////// TRASH ////////////////////////////////////////////////
+
+// alert(`France: ${points["France"]}\nItaly: ${points["Italy"]}\nJapan: ${points["Japan"]}\nUSA: ${points["USA"]}`);
+
 
 
 // function changePicturesLeftAndRight() {
