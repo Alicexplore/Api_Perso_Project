@@ -311,6 +311,11 @@ input:checked + .slider:before {
   opacity: 1;
 }
 
+.overlay__text:hover {
+  color: rgb(190, 190, 190);
+  transition: 2s;
+}
+
 .image__description__left {
     font-size: 1.2vw; 
     cursor: pointer;
