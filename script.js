@@ -119,10 +119,11 @@ function changePicturesLeftAndRight() {
 
   let displayedPhotosLeft = [];
   let displayedPhotosRight = [];
+  let selectedPhotos = [];
 
   let imageLeft = document.getElementById("imageLeft");
   let imageRight = document.getElementById("imageRight");
-
+  
   // PHOTOS LEFT  
 
   imageLeft.addEventListener("click", () => {
@@ -142,12 +143,13 @@ function changePicturesLeftAndRight() {
      
     document.getElementById("imageOnRight").src = photoListRight[randomRight];
 
-    
+    selectedPhotos.push(document.getElementById("imageOnLeft").src); 
+    selectedPhotos.push(document.getElementById("imageOnRight").src); 
+
     if (displayedPhotosLeft.length === photoListLeft.length - 1 && displayedPhotosRight.length === photoListRight.length - 1) {
       alert("All pictures have been played."); // HERE WROTE THE EVENT TO DISPLAY THE SCORES // CAREFUL +-1
-      // alert(scoresString);
+      alert(scoresString);
     }
-
   });
   
   // PHOTOS RIGHT
@@ -169,11 +171,15 @@ function changePicturesLeftAndRight() {
   
     document.getElementById("imageOnLeft").src = photoListLeft[randomLeft];
 
+    selectedPhotos.push(document.getElementById("imageOnLeft").src); 
+    selectedPhotos.push(document.getElementById("imageOnRight").src); 
+
     if (displayedPhotosLeft.length === photoListLeft.length - 1 && displayedPhotosRight.length === photoListRight.length - 1) {
       alert("All pictures have been played."); // HERE WROTE THE EVENT TO DISPLAY THE SCORES // CAREFUL +-1
-      // alert(scoresString);
-    }
+      alert(scoresString);
+    } 
   });
+  
 };
 
 changePicturesLeftAndRight();
@@ -219,6 +225,8 @@ let winnerUtah = ""
 //   if (!displayedPhotos.includes(randomLeft)) {
 //     displayedPhotos.push(randomLeft);
 
+//     let photoName = 
+
 //     let country = Object.keys(photoList).find(key => photoList[key].includes(photoName));
 //     scores[country] += 1;
 //     alert(`You earned a point for ${country}!`);
@@ -237,7 +245,16 @@ let winnerUtah = ""
 // });
 
 
+// const targetValue = selectedPhotos;
 
+// for (const key in photoList) {
+//   if (photoList.hasOwnProperty(key)) {
+//     const array = photoList[key];
+//     if (array.includes(targetValue)) {
+//       console.log(`Found '${targetValue}' in '${key}'`);
+//     }
+//   }
+// }
 
 
 
