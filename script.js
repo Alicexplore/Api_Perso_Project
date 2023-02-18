@@ -36,6 +36,7 @@ for (var [key, value] of Object.entries(scores)) {
   scoresString += `${key}: ${value}\n`;
 }
 
+
 /////////////////////////////////////////////////////// TRYING OBJECTS /////////////////////////////////////////////////////////////
 
 var photoList = {
@@ -129,9 +130,9 @@ function changePicturesLeftAndRight() {
     do {
       randomLeft = Math.floor(Math.random() * photoListLeft.length);
     } while (displayedPhotosLeft.includes(randomLeft));
-  
+
     displayedPhotosLeft.push(randomLeft);
-    
+
     document.getElementById("imageOnLeft").src = photoListLeft[randomLeft];
     let randomRight;
     do {
@@ -140,11 +141,13 @@ function changePicturesLeftAndRight() {
              displayedPhotosRight.push(randomRight);
      
     document.getElementById("imageOnRight").src = photoListRight[randomRight];
-  
+
+    
     if (displayedPhotosLeft.length === photoListLeft.length - 1 && displayedPhotosRight.length === photoListRight.length - 1) {
       alert("All pictures have been played."); // HERE WROTE THE EVENT TO DISPLAY THE SCORES // CAREFUL +-1
-      alert(scoresString);
+      // alert(scoresString);
     }
+
   });
   
   // PHOTOS RIGHT
@@ -165,13 +168,12 @@ function changePicturesLeftAndRight() {
              displayedPhotosLeft.push(randomLeft);
   
     document.getElementById("imageOnLeft").src = photoListLeft[randomLeft];
-  
+
     if (displayedPhotosLeft.length === photoListLeft.length - 1 && displayedPhotosRight.length === photoListRight.length - 1) {
       alert("All pictures have been played."); // HERE WROTE THE EVENT TO DISPLAY THE SCORES // CAREFUL +-1
-      alert(scoresString);
+      // alert(scoresString);
     }
   });
-
 };
 
 changePicturesLeftAndRight();
