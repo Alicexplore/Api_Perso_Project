@@ -16,7 +16,7 @@ window.addEventListener("load", function(){ // OPEN
 
 /////////////////////////////////////////////////////// SCORE VARIABLES /////////////////////////////////////////////////////////////
 
-const scores = {
+var scores = {
   "Australia": 0,
   "Bolivia": 0,
   "Cuba": 0,
@@ -31,9 +31,14 @@ const scores = {
   "Utah": 0
 };
 
+let scoresString = "";
+for (var [key, value] of Object.entries(scores)) {
+  scoresString += `${key}: ${value}\n`;
+}
+
 /////////////////////////////////////////////////////// TRYING OBJECTS /////////////////////////////////////////////////////////////
 
-const photoList = {
+var photoList = {
   "Australia": ["./australia/australia1.jpg", "./australia/australia2.jpg", "./australia/australia3.jpg", "./australia/australia4.jpg"],
   "Bolivia": ["./bolivia/bolivia1.jpg", "./bolivia/bolivia2.jpg", "./bolivia/bolivia3.jpg", "./bolivia/bolivia4.jpg"],
   "Cuba": ["./cuba/cuba1.jpg", "./cuba/cuba2.jpg", "./cuba/cuba3.jpg", "./cuba/cuba4.jpg"],
@@ -111,8 +116,8 @@ var photoListRight = [
 
 function changePicturesLeftAndRight() {
 
-  var displayedPhotosLeft = [];
-  var displayedPhotosRight = [];
+  let displayedPhotosLeft = [];
+  let displayedPhotosRight = [];
 
   let imageLeft = document.getElementById("imageLeft");
   let imageRight = document.getElementById("imageRight");
@@ -126,18 +131,19 @@ function changePicturesLeftAndRight() {
     } while (displayedPhotosLeft.includes(randomLeft));
   
     displayedPhotosLeft.push(randomLeft);
-  
+    
     document.getElementById("imageOnLeft").src = photoListLeft[randomLeft];
     let randomRight;
     do {
       randomRight = Math.floor(Math.random() * photoListRight.length);
     } while (displayedPhotosRight.includes(randomRight));
-    displayedPhotosRight.push(randomRight);
+             displayedPhotosRight.push(randomRight);
      
     document.getElementById("imageOnRight").src = photoListRight[randomRight];
   
-    if (displayedPhotosLeft.length === photoListLeft.length && displayedPhotosRight.length === photoListRight.length) {
+    if (displayedPhotosLeft.length === photoListLeft.length - 1 && displayedPhotosRight.length === photoListRight.length - 1) {
       alert("All pictures have been played."); // HERE WROTE THE EVENT TO DISPLAY THE SCORES // CAREFUL +-1
+      alert(scoresString);
     }
   });
   
@@ -156,12 +162,13 @@ function changePicturesLeftAndRight() {
     do {
       randomLeft = Math.floor(Math.random() * photoListLeft.length);
     } while (displayedPhotosLeft.includes(randomLeft));
-    displayedPhotosLeft.push(randomLeft);
+             displayedPhotosLeft.push(randomLeft);
   
     document.getElementById("imageOnLeft").src = photoListLeft[randomLeft];
   
-    if (displayedPhotosLeft.length === photoListLeft.length && displayedPhotosRight.length === photoListRight.length) {
+    if (displayedPhotosLeft.length === photoListLeft.length - 1 && displayedPhotosRight.length === photoListRight.length - 1) {
       alert("All pictures have been played."); // HERE WROTE THE EVENT TO DISPLAY THE SCORES // CAREFUL +-1
+      alert(scoresString);
     }
   });
 
@@ -210,8 +217,8 @@ let winnerUtah = ""
 //   if (!displayedPhotos.includes(randomLeft)) {
 //     displayedPhotos.push(randomLeft);
 
-//     let country = Object.keys(photoToCountry).find(key => photoToCountry[key].includes(photoName));
-//     points[country] += 1;
+//     let country = Object.keys(photoList).find(key => photoList[key].includes(photoName));
+//     scores[country] += 1;
 //     alert(`You earned a point for ${country}!`);
     
 //     if (displayedPhotos.length === photoListLeft.length) {
