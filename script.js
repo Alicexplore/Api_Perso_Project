@@ -120,6 +120,7 @@ function changePicturesLeftAndRight() {
   let displayedPhotosLeft = [];
   let displayedPhotosRight = [];
   let selectedPhotos = [];
+  let realSelected = [];
 
   let imageLeft = document.getElementById("imageLeft");
   let imageRight = document.getElementById("imageRight");
@@ -135,16 +136,18 @@ function changePicturesLeftAndRight() {
     displayedPhotosLeft.push(randomLeft);
 
     document.getElementById("imageOnLeft").src = photoListLeft[randomLeft];
+
     let randomRight;
     do {
       randomRight = Math.floor(Math.random() * photoListRight.length);
     } while (displayedPhotosRight.includes(randomRight));
              displayedPhotosRight.push(randomRight);
+    
+    let selectedPhoto = photoListLeft[randomLeft]; 
+    selectedPhotos.push(selectedPhoto);
+    alert(`Selected photos: ${selectedPhotos}`);
      
     document.getElementById("imageOnRight").src = photoListRight[randomRight];
-
-    selectedPhotos.push(document.getElementById("imageOnLeft").src); 
-    selectedPhotos.push(document.getElementById("imageOnRight").src); 
 
     if (displayedPhotosLeft.length === photoListLeft.length - 1 && displayedPhotosRight.length === photoListRight.length - 1) {
       alert("All pictures have been played."); // HERE WROTE THE EVENT TO DISPLAY THE SCORES // CAREFUL +-1
@@ -163,16 +166,18 @@ function changePicturesLeftAndRight() {
     displayedPhotosRight.push(randomRight);
   
     document.getElementById("imageOnRight").src = photoListRight[randomRight];
+
     let randomLeft;
     do {
       randomLeft = Math.floor(Math.random() * photoListLeft.length);
     } while (displayedPhotosLeft.includes(randomLeft));
              displayedPhotosLeft.push(randomLeft);
+    
+    let selectedPhoto = photoListRight[randomRight];
+    selectedPhotos.push(selectedPhoto);
+    alert(`Selected photos: ${selectedPhotos}`);
   
     document.getElementById("imageOnLeft").src = photoListLeft[randomLeft];
-
-    selectedPhotos.push(document.getElementById("imageOnLeft").src); 
-    selectedPhotos.push(document.getElementById("imageOnRight").src); 
 
     if (displayedPhotosLeft.length === photoListLeft.length - 1 && displayedPhotosRight.length === photoListRight.length - 1) {
       alert("All pictures have been played."); // HERE WROTE THE EVENT TO DISPLAY THE SCORES // CAREFUL +-1
@@ -258,6 +263,9 @@ let winnerUtah = ""
 
 
 
+    // selectedPhotos.push(document.getElementById("imageOnLeft").src); 
+    // selectedPhotos.push(document.getElementById("imageOnRight").src);
+    // alert(`Selected photos: ${selectedPhotos}`); 
 
 
 
