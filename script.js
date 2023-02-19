@@ -36,7 +36,6 @@ for (var [key, value] of Object.entries(scores)) {
   scoresString += `${key}: ${value}\n`;
 }
 
-
 /////////////////////////////////////////////////////// TRYING OBJECTS /////////////////////////////////////////////////////////////
 
 var photoList = {
@@ -120,7 +119,6 @@ function changePicturesLeftAndRight() {
   let displayedPhotosLeft = [];
   let displayedPhotosRight = [];
   let selectedPhotos = [];
-  let realSelected = [];
 
   let imageLeft = document.getElementById("imageLeft");
   let imageRight = document.getElementById("imageRight");
