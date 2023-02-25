@@ -31,6 +31,11 @@ var scores = {
   "Utah": 0
 };
 
+let scoresString = "";
+for (var [key, value] of Object.entries(scores)) {
+  scoresString += `${key}: ${value}\n`;
+}
+
 /////////////////////////////////////////////////////// TRYING OBJECTS /////////////////////////////////////////////////////////////
 
 var photoList = {
@@ -47,6 +52,7 @@ var photoList = {
   "Newzealand": ["./newzealand/newzealand1.jpg", "./newzealand/newzealand2.jpg", "./newzealand/newzealand3.jpg", "./newzealand/newzealand4.jpg"],
   "Utah": ["./utah/utah1.jpg", "./utah/utah2.jpg", "./utah/utah3.jpg", "./utah/utah4.jpg"]
 };
+
 
 /////////////////////////////////////////////////////// ARRAY OF PICTURES LEFTSIDE /////////////////////////////////////////////////////////////
 
@@ -108,34 +114,11 @@ var photoListRight = [
 
 /////////////////////////////////////////////////////// CHANGING PICTURES /////////////////////////////////////////////////////////////
 
-
-const generateImages = () => {
-  let randomLeft = Math.floor(Math.random() * photoListLeft.length);
-  let randomRight = Math.floor(Math.random() * photoListRight.length);
-
-  document.getElementById("imageOnLeft").src = photoListLeft[randomLeft];
-  document.getElementById("imageOnRight").src = photoListRight[randomRight];
-
-};
-
-// function selectedPhotos() {
-
-//   let selectedPhotos = [];
-  
-//   let selectedPhotoLeft = photoListLeft[randomLeft]; 
-//   selectedPhotos.push(selectedPhotoLeft);
-//   alert(`Selected photos: ${selectedPhotos}`);
-
-//   let selectedPhotoRight = photoListRight[randomRight]; 
-//   selectedPhotos.push(selectedPhotoRight);
-//   alert(`Selected photos: ${selectedPhotos}`);
-
-// }
-
-const changePicturesLeftAndRight = () => {
+function changePicturesLeftAndRight() {
 
   let displayedPhotosLeft = [];
   let displayedPhotosRight = [];
+  let selectedPhotos = [];
 
   let imageLeft = document.getElementById("imageLeft");
   let imageRight = document.getElementById("imageRight");
@@ -143,6 +126,10 @@ const changePicturesLeftAndRight = () => {
   // PHOTOS LEFT  
 
   imageLeft.addEventListener("click", () => {
+
+    let selectedPhoto = photoListLeft[randomLeft]; 
+    selectedPhotos.push(selectedPhoto);
+    alert(`Selected photos: ${selectedPhotos}`);
 
     let randomLeft;
     do {
@@ -165,7 +152,6 @@ const changePicturesLeftAndRight = () => {
       alert("All pictures have been played."); // HERE WROTE THE EVENT TO DISPLAY THE SCORES // CAREFUL +-1
       alert(scoresString);
     }
-
   });
   
   // PHOTOS RIGHT
@@ -185,6 +171,10 @@ const changePicturesLeftAndRight = () => {
       randomLeft = Math.floor(Math.random() * photoListLeft.length);
     } while (displayedPhotosLeft.includes(randomLeft));
              displayedPhotosLeft.push(randomLeft);
+    
+    let selectedPhoto = photoListRight[randomRight];
+    selectedPhotos.push(selectedPhoto);
+    alert(`Selected photos: ${selectedPhotos}`);
   
     document.getElementById("imageOnLeft").src = photoListLeft[randomLeft];
 
@@ -192,19 +182,11 @@ const changePicturesLeftAndRight = () => {
       alert("All pictures have been played."); // HERE WROTE THE EVENT TO DISPLAY THE SCORES // CAREFUL +-1
       alert(scoresString);
     } 
-  
   });
   
 };
 
-window.onload = function() {
-  generateImages();
-};
-
 changePicturesLeftAndRight();
-
-selectedPhotos();
-
 
 /////////////////////////////////////////////////////// LANSCAPE PHOTOS /////////////////////////////////////////////////////////////
 
