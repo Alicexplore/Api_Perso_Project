@@ -74,10 +74,10 @@ function generateRandomImages() {
   let randomIndex1 = Math.floor(Math.random() * images.length);
   let randomIndex2 = Math.floor(Math.random() * images.length);
 
-  while (randomIndex2 === randomIndex1 || trash.includes(randomIndex1) || trash.includes(randomIndex2)) {
-    randomIndex1 = Math.floor(Math.random() * images.length);
-    randomIndex2 = Math.floor(Math.random() * images.length);
-  }
+  // while (randomIndex2 === randomIndex1 || trash.includes(randomIndex1) || trash.includes(randomIndex2)) {
+  //   randomIndex1 = Math.floor(Math.random() * images.length);
+  //   randomIndex2 = Math.floor(Math.random() * images.length);
+  // }
 
   const leftImg = document.getElementById("left-img");
   const rightImg = document.getElementById("right-img");
@@ -91,7 +91,7 @@ function generateRandomImages() {
     } else {
       points[images[randomIndex1].country] = 1;
     }
-    alert(`You earned a point for ${images[randomIndex1].country}!`);
+    // alert(`You earned a point for ${images[randomIndex1].country}!`);
     trash.push(randomIndex1);
     trash.push(randomIndex2);
     generateRandomImages();
@@ -103,22 +103,29 @@ function generateRandomImages() {
     } else {
       points[images[randomIndex2].country] = 1;
     }
-    alert(`You earned a point for ${images[randomIndex2].country}!`);
+    // alert(`You earned a point for ${images[randomIndex2].country}!`);
     trash.push(randomIndex1);
     trash.push(randomIndex2);
     generateRandomImages();
   }
-};
 
-generateRandomImages();
+  if (trash.length === images.length) {
+    alert("You finished the game! \n Let's find out your scores...");
+  }
 
-// Once all images have been played, display points for each country in an alert
-window.addEventListener('load', function() {
   if (trash.length === images.length) {
     let message = "Points:\n";
     for (let country in points) {
       message += country + ": " + points[country] + "\n";
     }
     alert(message);
+    alert("Want to restart the game ?");
   }
-});
+  
+};
+
+generateRandomImages();
+
+
+
+

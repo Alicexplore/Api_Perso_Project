@@ -29,6 +29,24 @@ body {
     cursor: default;
   }
 
+  .container {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  img {
+    height: 100%;
+    width: 50%;
+    object-fit: cover;
+    cursor: pointer;
+  }
+
 /****************************************************** POPUP WINDOW ***************************************************************/
 
 .popup{
