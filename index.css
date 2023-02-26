@@ -4,17 +4,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 body {
-    margin: 0;
-    padding: 0; 
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	width: 100%;
 }
 
-*,
+/* *,
 *:before,
 *:after{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-}
+} */
 
 .backdrop {
     position: fixed; 
@@ -40,7 +42,7 @@ body {
     align-items: center;
   }
   
-  img {
+  .images_basic {
     height: 100%;
     width: 50%;
     object-fit: cover;
@@ -259,7 +261,7 @@ input:checked + .slider:before {
 
 /****************************************************** IMAGES ***************************************************************/
 
-.image__img1 {
+/* .image__img1 {
     width: 50vw;
     height: 100vh;
     display: flex;
@@ -273,27 +275,27 @@ input:checked + .slider:before {
     display: flex;
     border-width: 0;
     object-fit: cover; 
-} 
+}  */
 
-.flexbox {
+/* .flexbox {
     display: -webkit-box;
     -webkit-box-orient: horizontal;
     -webkit-box-align: stretch;
     width: auto;
     object-fit: cover;
     z-index: 1;
-}
+} */
 
-.imageLeft {
+/* .imageLeft {
     position: relative;
 }
 
 .imageRight {
     position: relative;
-}
+} */
 
 .image__overlay {
-    position: absolute;
+    /* position: absolute; */
     top: 0;
     left: 0;
     width: 100%;
@@ -334,7 +336,7 @@ input:checked + .slider:before {
   transition: 2s;
 }
 
-.image__description__left {
+/* .image__description__left {
     font-size: 1.2vw; 
     cursor: pointer;
     text-align: center; 
@@ -356,7 +358,7 @@ input:checked + .slider:before {
 .image__description__right:hover {
     transition: all 2s; 
     opacity: 0%;
-}
+} */
 
 
 @media only screen and (max-width: 600px) {

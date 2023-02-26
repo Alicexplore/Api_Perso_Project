@@ -74,11 +74,6 @@ function generateRandomImages() {
   let randomIndex1 = Math.floor(Math.random() * images.length);
   let randomIndex2 = Math.floor(Math.random() * images.length);
 
-  // while (randomIndex2 === randomIndex1 || trash.includes(randomIndex1) || trash.includes(randomIndex2)) {
-  //   randomIndex1 = Math.floor(Math.random() * images.length);
-  //   randomIndex2 = Math.floor(Math.random() * images.length);
-  // }
-
   const leftImg = document.getElementById("left-img");
   const rightImg = document.getElementById("right-img");
 
@@ -115,15 +110,12 @@ function generateRandomImages() {
 
   if (trash.length === images.length) {
     let message = "Points:\n";
-    
     // SORT BY VALUE
     const sortedKeys = Object.keys(points).sort((a, b) => points[b] - points[a]);
-  
     // POINTS FOR COUTRIES FOR BIGGEST TO SMALLEST
     sortedKeys.forEach((country) => {
       message += country + ": " + points[country] + "\n";
     });
-    
     alert(message);
     alert("Want to restart the game ?");
   }
@@ -141,7 +133,14 @@ generateRandomImages();
 
 
 
+ //   if (randomIndex2 === randomIndex1 || trash.includes(randomIndex1) || trash.includes(randomIndex2)) {
+  //   randomIndex1 = Math.floor(Math.random() * images.length - 1);
+  //   randomIndex2 = Math.floor(Math.random() * images.length - 1);
+  // }
 
+  // if (images[randomIndex1].src === images[randomIndex2].src) {
+  //   generateRandomImages();
+  // }
 
 
 
