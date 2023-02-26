@@ -15,8 +15,26 @@ But I'm making progress on this project step by step, feature by feature, and ma
 I think that's the whole story and challenge of being a developer.
 <br /><br />
 Fun 🖖🏼
-<br /><br />
-Postscript: This project is under construction/modification.
+<br />
+
+<br />
+
+## Next features : (This project is under construction/modification)
+
+<br />
+
+• More countries
+<br />
+• Not the same colors when photos are side by side
+<br />
+• Not the same type of lanscape when photos are side by side
+<br />
+• Possibility to choose hours of flight from your country
+<br />
+• Discovery sheet of winning country
+<br />
+• ...
+<br />
 
 <br />
 
