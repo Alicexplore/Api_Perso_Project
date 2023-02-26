@@ -21,8 +21,6 @@ Fun 🖖🏼
 
 ## Next features : (This project is under construction/modification)
 
-<br />
-
 • More countries
 <br />
 • Not the same colors when photos are side by side
