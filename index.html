@@ -4,15 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Picture Game</title>
-    <link rel="icon" href="img/logotab-10.png" type="image">
-    <link rel="stylesheet" href="index.css" />
+    <link rel="icon" href="img/.png" type="image">
+    <link rel="stylesheet" href="style.css" />
+    <title>Mon site</title>
 </head>
 <body>
-    <!------------------------------------ BACKGROUND FILTER ---------------------------------------------->
+
     <div class="backdrop">
     </div>
-    <!-------------------------------------- MODAL WINDOW ------------------------------------------------->
+    
     <div class="popup">
         <img class="littlelogo" src="./img/littlelogogood-06.png" alt="little logo">
         <!-- <h1></h1> -->
@@ -35,33 +35,13 @@
         </p>
       <button class="closebutton" id="close">start</button>
     </div>
-    <!----------------------------------------- SET PICTURES ------------------------------------------------->
-    <div class="flexbox">
-        <div class="imageLeft" id="imageLeft">
-            <div class="image__overlay image__overlay--blur" >
-                <p id="titleLeft1" class="image__description__Left"> 
-                    <p class="overlay__text">this way</p>    
-                </p>
-            </div> 
-            <div>
-                <img class="image__img1" id="imageOnLeft" src="" alt="Image on left side">  
-            </div>
-        </div>
+    
+    <div class="container">
+		<img id="left-img" src="">
+		<img id="right-img" src="">
+	</div>
 
-        <div class="imageRight" id="imageRight">
-            <div class="image__overlay image__overlay--blur" >
-                <p id="titleRight1" class="image__description__Right">
-                    <p class="overlay__text">this way</p>  
-                    <!-- ⇢→ -->
-                 </p>
-            </div> 
-            <div>   
-                <img class="image__img2" id="imageOnRight" src="" alt="Image on right side">
-            </div>
-        </div> 
-    </div>
-
-    <script src="script.js"></script>
+   <script src="script.js"></script>
 
 </body>
 </html>
