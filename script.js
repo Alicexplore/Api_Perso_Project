@@ -115,9 +115,15 @@ function generateRandomImages() {
 
   if (trash.length === images.length) {
     let message = "Points:\n";
-    for (let country in points) {
+    
+    // SORT BY VALUE
+    const sortedKeys = Object.keys(points).sort((a, b) => points[b] - points[a]);
+  
+    // POINTS FOR COUTRIES FOR BIGGEST TO SMALLEST
+    sortedKeys.forEach((country) => {
       message += country + ": " + points[country] + "\n";
-    }
+    });
+    
     alert(message);
     alert("Want to restart the game ?");
   }
@@ -128,4 +134,34 @@ generateRandomImages();
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+// if (trash.length === images.length) {
+//   let message = "Points:\n";
+//   let highestScoringCountry;
+//   let highestScore = -Infinity;
+  
+//   for (let country in points) {
+//     message += country + ": " + points[country] + "\n";
+//     if (points[country] > highestScore) {
+//       highestScore = points[country];
+//       highestScoringCountry = country;
+//     }
+//   }
+  
+//   message += "\n" + "The country with the highest score is: " + highestScoringCountry + " (" + highestScore + " points)";
+  
+//   alert(message);
+//   alert("Want to restart the game ?");
+// }
 
