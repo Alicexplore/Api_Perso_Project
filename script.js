@@ -107,11 +107,11 @@ function generateRandomImages() {
     generateRandomImages();
   }
 
-  if (trash.length === imagesLeft.length && trash.length === imagesRight.length) {
+  if (trash.length === imagesLeft.length) {
     alert("You finished the game! \n Let's find out your scores...");
   }
 
-  if (trash.length === images.length) {
+  if (trash.length === imagesLeft.length) {
     let message = "Points:\n";
     // SORT BY VALUE
     const sortedKeys = Object.keys(points).sort((a, b) => points[b] - points[a]);
