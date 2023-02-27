@@ -16,7 +16,7 @@ window.addEventListener("load", function(){ // OPEN
 
 ///////////////////////////////////////////////////////////////////////////// GAME //////////////////////////////////////////////////////////////////////////////////
 
-const imagesLeft = [
+const images = [
   { src: "./newzealand/newzealand1.jpg", country: "newzealand"},
   { src: "./newzealand/newzealand2.jpg", country: "newzealand"},
   { src: "./newzealand/newzealand3.jpg", country: "newzealand"},
@@ -41,9 +41,6 @@ const imagesLeft = [
   { src: "./utah/utah2.jpg", country: "utah"},
   { src: "./utah/utah3.jpg", country: "utah"},
   { src: "./utah/utah4.jpg", country: "utah"},
-];  
-
-const imagesRight = [
   { src: "./australia/australia1.jpg", country: "australia"},
   { src: "./australia/australia2.jpg", country: "australia"},
   { src: "./australia/australia3.jpg", country: "australia"},
@@ -68,46 +65,46 @@ const imagesRight = [
   { src: "./kenya/kenya2.jpg", country: "kenya"},
   { src: "./kenya/kenya3.jpg", country: "kenya"},
   { src: "./kenya/kenya4.jpg", country: "kenya"}
-]; 
+];  
   
 const trash = [];
 const points = {};
 
 function generateRandomImages() {
-  let randomLeft = Math.floor(Math.random() * imagesLeft.length);
-  let randomRight = Math.floor(Math.random() * imagesRight.length);
+  let randomIndex1 = Math.floor(Math.random() * images.length);
+  let randomIndex2 = Math.floor(Math.random() * images.length);
 
-  const leftImg = document.getElementById("left_img");
-  const rightImg = document.getElementById("right_img");
+  const leftImg = document.getElementById("left-img");
+  const rightImg = document.getElementById("right-img");
 
-  leftImg.src = imagesLeft[randomLeft].src;
-  rightImg.src = imagesRight[randomRight].src;
+  leftImg.src = images[randomIndex1].src;
+  rightImg.src = images[randomIndex2].src;
 
   leftImg.onclick = function() {
-    if (points[imagesLeft[randomLeft].country]) {
-      points[imagesLeft[randomLeft].country] += 1;
+    if (points[images[randomIndex1].country]) {
+      points[images[randomIndex1].country] += 1;
     } else {
-      points[imagesLeft[randomLeft].country] = 1;
+      points[images[randomIndex1].country] = 1;
     }
     // alert(`You earned a point for ${images[randomIndex1].country}!`);
-    trash.push(randomLeft);
-    trash.push(randomRight);
+    trash.push(randomIndex1);
+    trash.push(randomIndex2);
     generateRandomImages();
   }
 
   rightImg.onclick = function() {
-    if (points[imagesRight[randomRight].country]) {
-      points[imagesRight[randomRight].country] += 1;
+    if (points[images[randomIndex2].country]) {
+      points[images[randomIndex2].country] += 1;
     } else {
-      points[imagesRight[randomRight].country] = 1;
+      points[images[randomIndex2].country] = 1;
     }
     // alert(`You earned a point for ${images[randomIndex2].country}!`);
-    trash.push(randomLeft);
-    trash.push(randomRight);
+    trash.push(randomIndex1);
+    trash.push(randomIndex2);
     generateRandomImages();
   }
 
-  if (trash.length === imagesLeft.length && trash.length === imagesRight.length) {
+  if (trash.length === images.length) {
     alert("You finished the game! \n Let's find out your scores...");
   }
 
