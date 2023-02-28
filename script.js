@@ -73,7 +73,7 @@ const imagesRight = [
 const trash = [];
 const points = {};
 
-function generateRandomImages() {
+const generateRandomImages = () => {
   let randomLeft = Math.floor(Math.random() * imagesLeft.length);
   let randomRight = Math.floor(Math.random() * imagesRight.length);
 
