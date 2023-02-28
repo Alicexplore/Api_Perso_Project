@@ -74,6 +74,7 @@ const trash = [];
 const points = {};
 
 const generateRandomImages = () => {
+
   let randomLeft = Math.floor(Math.random() * imagesLeft.length);
   let randomRight = Math.floor(Math.random() * imagesRight.length);
 
@@ -92,6 +93,8 @@ const generateRandomImages = () => {
     // alert(`You earned a point for ${images[randomIndex1].country}!`);
     trash.push(randomLeft);
     trash.push(randomRight);
+    // imagesLeft.slice(randomLeft);
+    // imagesRight.slice(randomRight);
     generateRandomImages();
   }
 
@@ -104,14 +107,14 @@ const generateRandomImages = () => {
     // alert(`You earned a point for ${images[randomIndex2].country}!`);
     trash.push(randomLeft);
     trash.push(randomRight);
+    // imagesLeft.slice(randomLeft);
+    // imagesRight.slice(randomRight);
     generateRandomImages();
   }
 
   if (trash.length == 48) {
     alert("You finished the game! \n Let's find out your scores...");
-  }
 
-  if (trash.length == 48) {
     let message = "Points:\n";
     // SORT BY VALUE
     const sortedKeys = Object.keys(points).sort((a, b) => points[b] - points[a]);
@@ -126,44 +129,3 @@ const generateRandomImages = () => {
 };
 
 generateRandomImages();
-
-
-
-
-
-
-
-
-
-
- //   if (randomIndex2 === randomIndex1 || trash.includes(randomIndex1) || trash.includes(randomIndex2)) {
-  //   randomIndex1 = Math.floor(Math.random() * images.length - 1);
-  //   randomIndex2 = Math.floor(Math.random() * images.length - 1);
-  // }
-
-  // if (images[randomIndex1].src === images[randomIndex2].src) {
-  //   generateRandomImages();
-  // }
-
-
-
-
-// if (trash.length === images.length) {
-//   let message = "Points:\n";
-//   let highestScoringCountry;
-//   let highestScore = -Infinity;
-  
-//   for (let country in points) {
-//     message += country + ": " + points[country] + "\n";
-//     if (points[country] > highestScore) {
-//       highestScore = points[country];
-//       highestScoringCountry = country;
-//     }
-//   }
-  
-//   message += "\n" + "The country with the highest score is: " + highestScoringCountry + " (" + highestScore + " points)";
-  
-//   alert(message);
-//   alert("Want to restart the game ?");
-// }
-
