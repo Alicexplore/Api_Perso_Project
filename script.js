@@ -93,8 +93,6 @@ const generateRandomImages = () => {
     // alert(`You earned a point for ${images[randomIndex1].country}!`);
     trash.push(randomLeft);
     trash.push(randomRight);
-    // imagesLeft.slice(randomLeft);
-    // imagesRight.slice(randomRight);
     generateRandomImages();
   }
 
@@ -107,8 +105,6 @@ const generateRandomImages = () => {
     // alert(`You earned a point for ${images[randomIndex2].country}!`);
     trash.push(randomLeft);
     trash.push(randomRight);
-    // imagesLeft.slice(randomLeft);
-    // imagesRight.slice(randomRight);
     generateRandomImages();
   }
 
